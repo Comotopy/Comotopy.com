@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comotopy - デジタルマーケティング支援・コンサルティング</title>
     <meta name="description" content="「こうしたい！」をアイデアと技術で形にする。Comotopyはデジタルマーケティングの支援・コンサルティングを提供します。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="logo">
                 <h1><a href="index.html">Comotopy</a></h1>
@@ -20,7 +23,7 @@
                     <li><a href="#services">Services</a></li>
                     <li><a href="contact.html" class="contact-btn">Contact</a></li>
                 </ul>
-                <button class="hamburger" id="hamburger">
+                <button class="hamburger" id="hamburger" aria-label="メニューを開閉">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -31,57 +34,127 @@
 
     <main>
         <section id="home" class="hero">
+            <div class="hero-background"></div>
             <div class="container">
                 <div class="hero-content">
-                    <h1 class="team-name">Comotopy</h1>
-                    <p class="business-type">デジタルマーケティングの支援、コンサルティング事業</p>
-                    <h2 class="mission">「こうしたい！」をアイデアと技術で形にする</h2>
-                    <a href="contact.html" class="cta-button">お問い合わせ</a>
+                    <p class="hero-subtitle fade-in-up">Digital Marketing Partner</p>
+                    <h1 class="hero-title fade-in-up">
+                        「こうしたい！」を<br>
+                        <span class="gradient-text">アイデアと技術</span>で形にする
+                    </h1>
+                    <p class="hero-description fade-in-up">
+                        変革が多く答えのない現代社会において、デジタルマーケティングの支援・コンサルティングを軸に、戦略から実行まで伴走します。
+                    </p>
+                    <div class="hero-actions fade-in-up">
+                        <a href="contact.html" class="btn btn-primary">お問い合わせ</a>
+                        <a href="#services" class="btn btn-secondary">サービスを見る</a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+            </div>
+        </section>
+
+        <section id="about" class="about section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title reveal-up">About Us</h2>
+                    <p class="section-subtitle reveal-up">私たちの想いとアプローチ</p>
+                </div>
+                <div class="about-grid">
+                    <div class="about-content reveal-up">
+                        <p class="about-text">
+                            変革が多く答えのない現代社会において、経験や実績を元に最適解をご提供します。少しでもご満足いただけるために、迅速かつ丁寧な対応をお約束します。
+                        </p>
+                    </div>
+                    <div class="about-features">
+                        <div class="feature-card reveal-up">
+                            <div class="feature-icon">🎯</div>
+                            <h3>戦略的アプローチ</h3>
+                            <p>データに基づいた戦略設計から実装まで</p>
+                        </div>
+                        <div class="feature-card reveal-up">
+                            <div class="feature-icon">⚡</div>
+                            <h3>スピード重視</h3>
+                            <p>迅速な対応と効率的な実行力</p>
+                        </div>
+                        <div class="feature-card reveal-up">
+                            <div class="feature-icon">🤝</div>
+                            <h3>伴走型支援</h3>
+                            <p>お客様と共に成果を追求</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="about" class="about">
+        <section id="services" class="services section-padding">
             <div class="container">
-                <h2 class="section-title">About Us</h2>
-                <div class="about-content">
-                    <p>変革が多く答えのない現代社会において、経験や実績を元に最適解をご提供します。</p>
-                    <p>少しでもご満足いただけるために、迅速かつ丁寧な対応をお約束します。</p>
+                <div class="section-header">
+                    <h2 class="section-title reveal-up">Services</h2>
+                    <p class="section-subtitle reveal-up">包括的なデジタルマーケティング支援</p>
                 </div>
-            </div>
-        </section>
-
-        <section id="services" class="services">
-            <div class="container">
-                <h2 class="section-title">Services</h2>
                 <div class="services-grid">
-                    <div class="service-category">
-                        <h3>Digital Marketing</h3>
-                        <ul>
+                    <div class="service-card featured reveal-up">
+                        <div class="service-header">
+                            <div class="service-icon">📈</div>
+                            <h3>Digital Marketing</h3>
+                        </div>
+                        <ul class="service-list">
                             <li>Web Marketing</li>
                             <li>SNS Marketing</li>
                         </ul>
+                        <p class="service-description">デジタル領域での包括的なマーケティング戦略の立案・実行</p>
                     </div>
-                    <div class="service-item">
-                        <h4>Web制作</h4>
+
+                    <div class="service-card reveal-up">
+                        <div class="service-header">
+                            <div class="service-icon">💻</div>
+                            <h3>Web制作</h3>
+                        </div>
+                        <p class="service-description">戦略的なWebサイト設計・制作・最適化</p>
                     </div>
-                    <div class="service-item">
-                        <h4>SEO支援</h4>
+
+                    <div class="service-card reveal-up">
+                        <div class="service-header">
+                            <div class="service-icon">🔍</div>
+                            <h3>SEO支援</h3>
+                        </div>
+                        <p class="service-description">検索エンジン最適化による集客力向上</p>
                     </div>
-                    <div class="service-item">
-                        <h4>MEO支援</h4>
+
+                    <div class="service-card reveal-up">
+                        <div class="service-header">
+                            <div class="service-icon">📍</div>
+                            <h3>MEO支援</h3>
+                        </div>
+                        <p class="service-description">ローカル検索での上位表示とビジネス成長</p>
                     </div>
-                    <div class="service-item">
-                        <h4>Instagram運用代行</h4>
+
+                    <div class="service-card reveal-up">
+                        <div class="service-header">
+                            <div class="service-icon">📸</div>
+                            <h3>Instagram運用代行</h3>
+                        </div>
+                        <p class="service-description">ブランディングと集客を両立するInstagram運用</p>
                     </div>
-                    <div class="service-item">
-                        <h4>X運用代行</h4>
+
+                    <div class="service-card reveal-up">
+                        <div class="service-header">
+                            <div class="service-icon">🐦</div>
+                            <h3>X運用代行</h3>
+                        </div>
+                        <p class="service-description">リアルタイムなコミュニケーションでファン獲得</p>
                     </div>
                 </div>
-                <div class="cta-section">
-                    <h3>お気軽にご相談ください</h3>
-                    <p>サービスに関するご質問やご相談は、お問い合わせページからご連絡ください。</p>
-                    <a href="contact.html" class="cta-button">お問い合わせへ</a>
+
+                <div class="cta-section reveal-up">
+                    <div class="cta-card">
+                        <h3>まずはお気軽にご相談ください</h3>
+                        <p>課題の整理だけでも大歓迎。オンラインでの無料相談を実施中です。</p>
+                        <a href="contact.html" class="btn btn-primary">無料相談を申し込む</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -89,7 +162,18 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; <span class="year"></span> Comotopy. All rights reserved.</p>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Comotopy</h3>
+                    <p>「こうしたい！」をアイデアと技術で形にする</p>
+                </div>
+                <div class="footer-contact">
+                    <a href="mailto:comotopy@gmail.com" class="footer-email">comotopy@gmail.com</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span class="year"></span> Comotopy. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
