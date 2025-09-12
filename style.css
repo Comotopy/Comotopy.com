@@ -1141,3 +1141,62 @@ body {
         display: none !important;
     }
 }
+/* ========================================
+   SIMPLIFIED LAYOUTS
+======================================== */
+
+/* About Simple Layout */
+.about-simple {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-text-center {
+    text-align: center;
+}
+
+.about-description {
+    font-size: 1.1rem;
+    color: var(--color-text-secondary);
+    margin-top: 1.5rem;
+    line-height: 1.7;
+}
+
+/* Contact Simple Layout */
+.contact-simple {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-center {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.contact-center .contact-method {
+    width: 100%;
+    max-width: 500px;
+    justify-content: center;
+}
+
+.contact-center .response-guarantee {
+    width: 100%;
+    max-width: 500px;
+    justify-content: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-simple,
+    .contact-simple {
+        max-width: 100%;
+    }
+    
+    .contact-center .contact-method,
+    .contact-center .response-guarantee {
+        max-width: 100%;
+    }
+}
+
