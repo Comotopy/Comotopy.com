@@ -4,131 +4,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact｜Comotopy</title>
-    <meta name="description" content="Comotopyへのお問い合わせ。デジタルマーケティング支援に関するご相談をお待ちしております。無料相談実施中、通常24時間以内に回答いたします。">
-    <link rel="canonical" href="https://comotopy.github.io/Comotopy.com/contact.html">
+    <meta name="description" content="次世代デジタルマーケティングのご相談はこちら。24時間以内の迅速対応をお約束します。">
     
-    <!-- Open Graph / Social Media -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Contact｜Comotopy">
-    <meta property="og:description" content="デジタルマーケティング支援に関するご相談をお待ちしております。">
-    <meta property="og:url" content="https://comotopy.github.io/Comotopy.com/contact.html">
-    
-    <!-- Preload Critical Resources -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+JP:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Favicon -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
     
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Skip Link for Accessibility -->
-    <a href="#main" class="skip-link">メインコンテンツにスキップ</a>
+    <!-- Cursor Glow Effect -->
+    <div class="cursor-glow" id="cursor-glow"></div>
     
-    <header class="header" id="header" role="banner">
+    <!-- Background Grid -->
+    <div class="bg-grid"></div>
+    
+    <header class="header" id="header">
         <div class="container">
             <div class="header__brand">
-                <h1><a href="index.html" aria-label="Comotopy ホームページ">Comotopy</a></h1>
+                <h1><a href="index.html" class="logo-text">Comotopy</a></h1>
             </div>
-            <nav class="header__nav" role="navigation" aria-label="メインナビゲーション">
+            <nav class="header__nav">
                 <ul class="nav-menu" id="nav-menu">
-                    <li><a href="index.html#home" class="nav-link">Home</a></li>
-                    <li><a href="index.html#about" class="nav-link">About</a></li>
-                    <li><a href="index.html#services" class="nav-link">Services</a></li>
-                    <li><a href="contact.html" class="nav-link btn btn--primary btn--small nav-link--active" aria-current="page">Contact</a></li>
+                    <li><a href="index.html#home" class="nav-link">01. Home</a></li>
+                    <li><a href="index.html#about" class="nav-link">02. About</a></li>
+                    <li><a href="index.html#services" class="nav-link">03. Services</a></li>
+                    <li><a href="contact.html" class="nav-link nav-link--cta nav-link--active">Contact</a></li>
                 </ul>
-                <button class="hamburger" id="hamburger" aria-label="メニューを開閉" aria-expanded="false" aria-controls="nav-menu">
-                    <span class="hamburger__line"></span>
-                    <span class="hamburger__line"></span>
-                    <span class="hamburger__line"></span>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </button>
             </nav>
         </div>
         <div class="header__progress" id="header-progress"></div>
     </header>
 
-    <main id="main" role="main">
-        <section class="hero hero--contact" aria-labelledby="contact-title">
-            <div class="hero__background">
-                <div class="hero__shapes">
-                    <div class="shape shape--1"></div>
-                    <div class="shape shape--2"></div>
-                    <div class="shape shape--3"></div>
+    <main>
+        <section class="hero hero--contact">
+            <div class="hero__bg">
+                <div class="floating-shapes">
+                    <div class="shape"></div>
+                    <div class="shape"></div>
+                    <div class="shape"></div>
                 </div>
             </div>
             <div class="container">
                 <div class="hero__content">
-                    <h1 id="contact-title" class="hero__title animate-fade-up">Contact</h1>
-                    <p class="hero__description animate-fade-up">お気軽にお問い合わせください</p>
+                    <div class="hero__badge">
+                        <span class="badge-text">Let's Connect</span>
+                        <div class="badge-shine"></div>
+                    </div>
+                    <h1 class="hero__title">
+                        <span class="title-line">Ready to</span>
+                        <span class="title-line title-line--gradient">Innovate?</span>
+                    </h1>
+                    <p class="hero__description">
+                        次のレベルへ。お気軽にご相談ください。
+                    </p>
                 </div>
             </div>
         </section>
 
-        <section class="section section--light" aria-labelledby="contact-info-title">
+        <section class="contact-section">
             <div class="container">
                 <div class="contact-grid">
-                    <div class="contact-info animate-reveal">
-                        <h2 id="contact-info-title" class="contact-info__title">お問い合わせ方法</h2>
-                        <div class="contact-method card">
-                            <div class="contact-method__icon" aria-hidden="true">✉️</div>
-                            <div class="contact-method__details">
+                    <div class="contact-info">
+                        <div class="section-header">
+                            <span class="section-number">01</span>
+                            <h2 class="section-title">Get In Touch</h2>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">✉️</div>
+                            <div class="contact-details">
                                 <h3>Email</h3>
-                                <p class="contact-method__email">
-                                    <a href="mailto:comotopy@gmail.com?subject=【Comotopy】お問い合わせ&body=お問い合わせありがとうございます。%0D%0A%0D%0A■ お問い合わせ内容：%0D%0A%0D%0A■ ご相談の背景・目的：%0D%0A%0D%0A■ 現状の課題やゴール：%0D%0A%0D%0A■ ご希望の時期：%0D%0A%0D%0A■ 予算感（任意）：%0D%0A%0D%0A何でもお気軽にご相談ください。" 
-                                       class="email-link" aria-label="メールでお問い合わせ">
-                                        comotopy@gmail.com
-                                    </a>
-                                </p>
-                                <p class="contact-method__note">メールアドレスをクリックすると、お使いのメールソフトが起動します。</p>
+                                <a href="mailto:comotopy@gmail.com?subject=【Comotopy】プロジェクトのご相談" 
+                                   class="email-link">
+                                    comotopy@gmail.com
+                                </a>
+                                <p class="contact-note">クリックでメールソフトが起動します</p>
                             </div>
+                            <div class="card-glow"></div>
                         </div>
                         
                         <div class="response-guarantee">
-                            <div class="response-guarantee__icon" aria-hidden="true">⏱️</div>
-                            <div class="response-guarantee__content">
-                                <h3>返信保証</h3>
-                                <p>通常<strong>24時間以内</strong>にご返信いたします</p>
+                            <div class="guarantee-icon">⚡</div>
+                            <div class="guarantee-content">
+                                <h3>24時間以内の返信保証</h3>
+                                <p>迅速な対応をお約束します</p>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="contact-guidelines animate-reveal">
-                        <h3>ご相談時にお教えいただけると助かること</h3>
-                        <div class="guidelines-grid">
-                            <div class="guideline-item">
-                                <div class="guideline-item__icon" aria-hidden="true">🎯</div>
-                                <div class="guideline-item__content">
-                                    <h4>ご相談の背景・目的</h4>
-                                    <p>どのような課題を解決したいかお聞かせください</p>
+                    <div class="consultation-guide">
+                        <h3>Consultation Guide</h3>
+                        <p class="guide-intro">効果的なご相談のために、以下をお教えいただけると幸いです</p>
+                        
+                        <div class="guide-grid">
+                            <div class="guide-item">
+                                <div class="guide-icon">🎯</div>
+                                <div class="guide-content">
+                                    <h4>Project Goals</h4>
+                                    <p>達成したい目標や解決したい課題</p>
                                 </div>
                             </div>
-                            <div class="guideline-item">
-                                <div class="guideline-item__icon" aria-hidden="true">📊</div>
-                                <div class="guideline-item__content">
-                                    <h4>現状の課題やゴール</h4>
-                                    <p>分かる範囲で構いませんので、現在の状況をお教えください</p>
+                            <div class="guide-item">
+                                <div class="guide-icon">📊</div>
+                                <div class="guide-content">
+                                    <h4>Current Status</h4>
+                                    <p>現在の状況や取り組み内容</p>
                                 </div>
                             </div>
-                            <div class="guideline-item">
-                                <div class="guideline-item__icon" aria-hidden="true">📅</div>
-                                <div class="guideline-item__content">
-                                    <h4>ご希望の時期</h4>
-                                    <p>いつ頃から開始をお考えかお聞かせください</p>
+                            <div class="guide-item">
+                                <div class="guide-icon">📅</div>
+                                <div class="guide-content">
+                                    <h4>Timeline</h4>
+                                    <p>希望する開始時期やスケジュール</p>
                                 </div>
                             </div>
-                            <div class="guideline-item">
-                                <div class="guideline-item__icon" aria-hidden="true">💰</div>
-                                <div class="guideline-item__content">
-                                    <h4>予算感（任意）</h4>
-                                    <p>大まかな予算感があればお教えください</p>
+                            <div class="guide-item">
+                                <div class="guide-icon">💰</div>
+                                <div class="guide-content">
+                                    <h4>Budget Range</h4>
+                                    <p>大まかな予算感（任意）</p>
                                 </div>
                             </div>
                         </div>
                         
                         <div class="consultation-note">
-                            <p><strong>初回相談は完全無料</strong>です。課題の整理だけでも大歓迎ですので、お気軽にご連絡ください。</p>
+                            <div class="note-icon">🎉</div>
+                            <div class="note-content">
+                                <h4>初回相談は完全無料</h4>
+                                <p>アイデアの整理だけでも大歓迎です</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -136,15 +150,15 @@
         </section>
     </main>
 
-    <footer class="footer" role="contentinfo">
+    <footer class="footer">
         <div class="container">
             <div class="footer__content">
                 <div class="footer__brand">
-                    <h3>Comotopy</h3>
-                    <p>「こうしたい！」をアイデアと技術で形にする</p>
+                    <h3 class="footer__logo">Comotopy</h3>
+                    <p class="footer__tagline">Digital Innovation Partner</p>
                 </div>
                 <div class="footer__contact">
-                    <a href="mailto:comotopy@gmail.com?subject=【Comotopy】お問い合わせ" class="footer__email" aria-label="メールでお問い合わせ">
+                    <a href="mailto:comotopy@gmail.com" class="footer__link">
                         comotopy@gmail.com
                     </a>
                 </div>
@@ -155,6 +169,6 @@
         </div>
     </footer>
 
-    <script src="script.js" defer></script>
+    <script src="script.js"></script>
 </body>
 </html>
