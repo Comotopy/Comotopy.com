@@ -3,218 +3,267 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comotopy｜デジタルマーケティング支援・コンサルティング</title>
-    <meta name="description" content="「こうしたい！」をアイデアと技術で形にする。Comotopyはデジタルマーケティングの支援・コンサルティングを提供します。戦略から実行まで伴走するパートナー。">
-    <meta name="keywords" content="デジタルマーケティング,コンサルティング,SEO,MEO,SNS運用,Web制作,Instagram,X運用">
-    <link rel="canonical" href="https://comotopy.github.io/Comotopy.com/">
+    <title>Comotopy｜Next-Gen Digital Innovation</title>
+    <meta name="description" content="「こうしたい！」をアイデアと技術で形にする。次世代のデジタルマーケティングパートナー。">
     
-    <!-- Open Graph / Social Media -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Comotopy｜デジタルマーケティング支援・コンサルティング">
-    <meta property="og:description" content="「こうしたい！」をアイデアと技術で形にする。戦略から実行まで伴走するデジタルマーケティングパートナー。">
-    <meta property="og:url" content="https://comotopy.github.io/Comotopy.com/">
-    <meta name="twitter:card" content="summary_large_image">
-    
-    <!-- Preload Critical Resources -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+JP:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Favicon -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
     
     <link rel="stylesheet" href="style.css">
-    
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Comotopy",
-        "url": "https://comotopy.github.io/Comotopy.com/",
-        "email": "comotopy@gmail.com",
-        "description": "デジタルマーケティングの支援・コンサルティング事業",
-        "foundingDate": "2024",
-        "serviceArea": "Japan"
-    }
-    </script>
 </head>
 <body>
-    <!-- Skip Link for Accessibility -->
-    <a href="#main" class="skip-link">メインコンテンツにスキップ</a>
+    <!-- Cursor Glow Effect -->
+    <div class="cursor-glow" id="cursor-glow"></div>
     
-    <header class="header" id="header" role="banner">
+    <!-- Background Grid -->
+    <div class="bg-grid"></div>
+    
+    <header class="header" id="header">
         <div class="container">
             <div class="header__brand">
-                <h1><a href="index.html" aria-label="Comotopy ホームページ">Comotopy</a></h1>
+                <h1><a href="index.html" class="logo-text">Comotopy</a></h1>
             </div>
-            <nav class="header__nav" role="navigation" aria-label="メインナビゲーション">
+            <nav class="header__nav">
                 <ul class="nav-menu" id="nav-menu">
-                    <li><a href="#home" class="nav-link">Home</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#services" class="nav-link">Services</a></li>
-                    <li><a href="contact.html" class="nav-link btn btn--primary btn--small">Contact</a></li>
+                    <li><a href="#home" class="nav-link">01. Home</a></li>
+                    <li><a href="#about" class="nav-link">02. About</a></li>
+                    <li><a href="#services" class="nav-link">03. Services</a></li>
+                    <li><a href="contact.html" class="nav-link nav-link--cta">Contact</a></li>
                 </ul>
-                <button class="hamburger" id="hamburger" aria-label="メニューを開閉" aria-expanded="false" aria-controls="nav-menu">
-                    <span class="hamburger__line"></span>
-                    <span class="hamburger__line"></span>
-                    <span class="hamburger__line"></span>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </button>
             </nav>
         </div>
         <div class="header__progress" id="header-progress"></div>
     </header>
 
-    <main id="main" role="main">
-        <section id="home" class="hero" aria-labelledby="hero-title">
-            <div class="hero__background">
-                <div class="hero__shapes">
-                    <div class="shape shape--1"></div>
-                    <div class="shape shape--2"></div>
-                    <div class="shape shape--3"></div>
+    <main>
+        <section id="home" class="hero">
+            <div class="hero__bg">
+                <div class="floating-shapes">
+                    <div class="shape"></div>
+                    <div class="shape"></div>
+                    <div class="shape"></div>
+                    <div class="shape"></div>
                 </div>
             </div>
             <div class="container">
                 <div class="hero__content">
-                    <p class="hero__subtitle animate-fade-up">Digital Marketing Partner</p>
-                    <h1 id="hero-title" class="hero__title animate-fade-up">
-                        「こうしたい！」を<br>
-                        <span class="text-gradient">アイデアと技術</span>で形にする
+                    <div class="hero__badge">
+                        <span class="badge-text">Digital Innovation Partner</span>
+                        <div class="badge-shine"></div>
+                    </div>
+                    <h1 class="hero__title">
+                        <span class="title-line">「こうしたい！」を</span>
+                        <span class="title-line title-line--gradient">アイデアと技術</span>
+                        <span class="title-line">で形にする</span>
                     </h1>
-                    <p class="hero__description animate-fade-up">
-                        変革が多く答えのない現代社会において、デジタルマーケティングの支援・コンサルティングを軸に、戦略から実行まで伴走します。
+                    <p class="hero__description">
+                        次世代のデジタル体験を創造し、ビジネスの可能性を無限大に。<br>
+                        戦略から実行まで、革新的なソリューションを提供します。
                     </p>
-                    <div class="hero__actions animate-fade-up">
+                    <div class="hero__actions">
                         <a href="contact.html" class="btn btn--primary">
-                            <span>お問い合わせ</span>
-                            <svg class="btn__icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-                                <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                            <span>Start Project</span>
+                            <svg class="btn__icon" width="16" height="16" viewBox="0 0 16 16">
+                                <path d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z" fill="currentColor"/>
                             </svg>
                         </a>
-                        <a href="#services" class="btn btn--secondary">サービスを見る</a>
+                        <a href="#services" class="btn btn--ghost">
+                            <span>View Services</span>
+                        </a>
                     </div>
                 </div>
-            </div>
-            <div class="scroll-indicator" aria-hidden="true">
-                <div class="scroll-indicator__arrow"></div>
-                <span class="scroll-indicator__text">Scroll</span>
-            </div>
-        </section>
-
-        <section id="about" class="section section--light" aria-labelledby="about-title">
-            <div class="container">
-                <header class="section__header">
-                    <h2 id="about-title" class="section__title animate-reveal">About Us</h2>
-                    <p class="section__subtitle animate-reveal">私たちの想いとアプローチ</p>
-                </header>
-                <div class="about-grid">
-                    <div class="about__content animate-reveal">
-                        <p class="text-large">
-                            変革が多く答えのない現代社会において、経験や実績を元に最適解をご提供します。
-                            少しでもご満足いただけるために、迅速かつ丁寧な対応をお約束します。
-                        </p>
-                        <div class="about__stats">
-                            <div class="stat-card">
-                                <div class="stat-card__number" data-counter="100">0</div>
-                                <div class="stat-card__label">満足度</div>
-                                <div class="stat-card__unit">%</div>
+                <div class="hero__visual">
+                    <div class="terminal">
+                        <div class="terminal__header">
+                            <div class="terminal__dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
                             </div>
-                            <div class="stat-card">
-                                <div class="stat-card__number" data-counter="24">0</div>
-                                <div class="stat-card__label">平均返信時間</div>
-                                <div class="stat-card__unit">時間以内</div>
+                            <div class="terminal__title">comotopy.exe</div>
+                        </div>
+                        <div class="terminal__body">
+                            <div class="terminal__line">
+                                <span class="terminal__prompt">$</span>
+                                <span class="terminal__command" id="typing-text"></span>
+                                <span class="terminal__cursor">|</span>
                             </div>
-                        </div>
-                    </div>
-                    <div class="about__features">
-                        <div class="feature-card animate-reveal">
-                            <div class="feature-card__icon" aria-hidden="true">🎯</div>
-                            <h3>戦略的アプローチ</h3>
-                            <p>データに基づいた戦略設計から実装まで、成果にコミット</p>
-                        </div>
-                        <div class="feature-card animate-reveal">
-                            <div class="feature-card__icon" aria-hidden="true">⚡</div>
-                            <h3>スピード重視</h3>
-                            <p>迅速な対応と効率的な実行力で、機会損失を最小限に</p>
-                        </div>
-                        <div class="feature-card animate-reveal">
-                            <div class="feature-card__icon" aria-hidden="true">🤝</div>
-                            <h3>伴走型支援</h3>
-                            <p>お客様と共に成果を追求し、持続的な成長を実現</p>
+                            <div class="terminal__output">
+                                <div class="output-line">✓ Analyzing market trends...</div>
+                                <div class="output-line">✓ Optimizing digital strategy...</div>
+                                <div class="output-line">✓ Generating solutions...</div>
+                                <div class="output-line success">Ready to transform!</div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="services" class="section" aria-labelledby="services-title">
+        <section id="about" class="about">
             <div class="container">
-                <header class="section__header">
-                    <h2 id="services-title" class="section__title animate-reveal">Services</h2>
-                    <p class="section__subtitle animate-reveal">包括的なデジタルマーケティング支援</p>
-                </header>
+                <div class="section-header">
+                    <span class="section-number">01</span>
+                    <h2 class="section-title">About Us</h2>
+                    <p class="section-subtitle">革新的なアプローチで未来を創造</p>
+                </div>
+                
+                <div class="about__grid">
+                    <div class="about__content">
+                        <div class="text-block">
+                            <p class="text-large">
+                                変革が多く答えのない現代社会において、私たちは<strong>経験と実績</strong>を基盤に、
+                                最先端のテクノロジーと創造的な思考で最適解をご提供します。
+                            </p>
+                            <p>
+                                クライアント様の「こうしたい！」という想いを形にするため、
+                                迅速かつ丁寧な対応で、持続的な成長を実現します。
+                            </p>
+                        </div>
+                        
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <div class="stat-number" data-count="100">0</div>
+                                <div class="stat-label">満足度</div>
+                                <div class="stat-unit">%</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-number" data-count="24">0</div>
+                                <div class="stat-label">返信時間</div>
+                                <div class="stat-unit">h</div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-number" data-count="50">0</div>
+                                <div class="stat-label">プロジェクト</div>
+                                <div class="stat-unit">+</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">🎯</div>
+                            <h3>Strategic Approach</h3>
+                            <p>データドリブンな戦略設計から実装まで、ROIにコミットした支援を提供</p>
+                            <div class="card-glow"></div>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">⚡</div>
+                            <h3>Lightning Speed</h3>
+                            <p>迅速な対応と効率的な実行力で、ビジネスチャンスを逃さない</p>
+                            <div class="card-glow"></div>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🚀</div>
+                            <h3>Innovation First</h3>
+                            <p>最新技術とクリエイティブな発想で、競合を凌駕するソリューション</p>
+                            <div class="card-glow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">02</span>
+                    <h2 class="section-title">Services</h2>
+                    <p class="section-subtitle">次世代デジタルソリューション</p>
+                </div>
+                
                 <div class="services-grid">
-                    <article class="service-card service-card--featured animate-reveal">
-                        <header class="service-card__header">
-                            <div class="service-card__icon" aria-hidden="true">📈</div>
+                    <div class="service-card service-card--featured">
+                        <div class="service-header">
+                            <div class="service-icon">📈</div>
                             <h3>Digital Marketing</h3>
-                        </header>
-                        <ul class="service-card__list">
-                            <li>Web Marketing</li>
-                            <li>SNS Marketing</li>
+                            <div class="service-badge">Premium</div>
+                        </div>
+                        <ul class="service-list">
+                            <li>Advanced Web Marketing</li>
+                            <li>Strategic SNS Marketing</li>
+                            <li>Performance Analytics</li>
                         </ul>
-                        <p class="service-card__description">デジタル領域での包括的なマーケティング戦略の立案・実行</p>
-                    </article>
+                        <p class="service-description">
+                            AIとデータサイエンスを活用した次世代マーケティング戦略
+                        </p>
+                        <div class="card-glow"></div>
+                    </div>
 
-                    <article class="service-card animate-reveal">
-                        <header class="service-card__header">
-                            <div class="service-card__icon" aria-hidden="true">💻</div>
-                            <h3>Web制作</h3>
-                        </header>
-                        <p class="service-card__description">戦略的なWebサイト設計・制作・最適化</p>
-                    </article>
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon">💻</div>
+                            <h3>Web Development</h3>
+                        </div>
+                        <p class="service-description">
+                            モダンな技術スタックによる高性能Webアプリケーション開発
+                        </p>
+                        <div class="card-glow"></div>
+                    </div>
 
-                    <article class="service-card animate-reveal">
-                        <header class="service-card__header">
-                            <div class="service-card__icon" aria-hidden="true">🔍</div>
-                            <h3>SEO支援</h3>
-                        </header>
-                        <p class="service-card__description">検索エンジン最適化による集客力向上</p>
-                    </article>
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon">🔍</div>
+                            <h3>SEO Optimization</h3>
+                        </div>
+                        <p class="service-description">
+                            最新アルゴリズムに対応した戦略的SEO施策
+                        </p>
+                        <div class="card-glow"></div>
+                    </div>
 
-                    <article class="service-card animate-reveal">
-                        <header class="service-card__header">
-                            <div class="service-card__icon" aria-hidden="true">📍</div>
-                            <h3>MEO支援</h3>
-                        </header>
-                        <p class="service-card__description">ローカル検索での上位表示とビジネス成長</p>
-                    </article>
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon">📍</div>
+                            <h3>Local SEO (MEO)</h3>
+                        </div>
+                        <p class="service-description">
+                            地域密着型ビジネスの集客力を最大化
+                        </p>
+                        <div class="card-glow"></div>
+                    </div>
 
-                    <article class="service-card animate-reveal">
-                        <header class="service-card__header">
-                            <div class="service-card__icon" aria-hidden="true">📸</div>
-                            <h3>Instagram運用代行</h3>
-                        </header>
-                        <p class="service-card__description">ブランディングと集客を両立するInstagram運用</p>
-                    </article>
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon">📸</div>
+                            <h3>Instagram Growth</h3>
+                        </div>
+                        <p class="service-description">
+                            ブランディングと集客を両立するInstagram戦略
+                        </p>
+                        <div class="card-glow"></div>
+                    </div>
 
-                    <article class="service-card animate-reveal">
-                        <header class="service-card__header">
-                            <div class="service-card__icon" aria-hidden="true">🐦</div>
-                            <h3>X運用代行</h3>
-                        </header>
-                        <p class="service-card__description">リアルタイムなコミュニケーションでファン獲得</p>
-                    </article>
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon">🐦</div>
+                            <h3>X (Twitter) Marketing</h3>
+                        </div>
+                        <p class="service-description">
+                            リアルタイムエンゲージメントでファン獲得
+                        </p>
+                        <div class="card-glow"></div>
+                    </div>
                 </div>
 
-                <div class="cta-section animate-reveal">
+                <div class="cta-section">
                     <div class="cta-card">
-                        <h3>まずはお気軽にご相談ください</h3>
-                        <p>課題の整理だけでも大歓迎。オンラインでの無料相談を実施中です。</p>
+                        <h3>Ready to Transform?</h3>
+                        <p>次のレベルへ。無料コンサルテーションで可能性を探りましょう。</p>
                         <a href="contact.html" class="btn btn--primary">
-                            <span>無料相談を申し込む</span>
-                            <svg class="btn__icon" width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-                                <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                            <span>Get Started</span>
+                            <svg class="btn__icon" width="16" height="16" viewBox="0 0 16 16">
+                                <path d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z" fill="currentColor"/>
                             </svg>
                         </a>
                     </div>
@@ -223,15 +272,15 @@
         </section>
     </main>
 
-    <footer class="footer" role="contentinfo">
+    <footer class="footer">
         <div class="container">
             <div class="footer__content">
                 <div class="footer__brand">
-                    <h3>Comotopy</h3>
-                    <p>「こうしたい！」をアイデアと技術で形にする</p>
+                    <h3 class="footer__logo">Comotopy</h3>
+                    <p class="footer__tagline">Digital Innovation Partner</p>
                 </div>
                 <div class="footer__contact">
-                    <a href="mailto:comotopy@gmail.com?subject=【Comotopy】お問い合わせ" class="footer__email" aria-label="メールでお問い合わせ">
+                    <a href="mailto:comotopy@gmail.com" class="footer__link">
                         comotopy@gmail.com
                     </a>
                 </div>
@@ -242,6 +291,6 @@
         </div>
     </footer>
 
-    <script src="script.js" defer></script>
+    <script src="script.js"></script>
 </body>
 </html>
