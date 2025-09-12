@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Comotopy</title>
     <meta name="description" content="Comotopyへのお問い合わせはこちらから。デジタルマーケティング支援に関するご相談をお待ちしております。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="logo">
                 <h1><a href="index.html">Comotopy</a></h1>
@@ -20,7 +23,7 @@
                     <li><a href="index.html#services">Services</a></li>
                     <li><a href="contact.html" class="contact-btn active">Contact</a></li>
                 </ul>
-                <button class="hamburger" id="hamburger">
+                <button class="hamburger" id="hamburger" aria-label="メニューを開閉">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -31,22 +34,67 @@
 
     <main>
         <section class="contact-hero">
+            <div class="hero-background"></div>
             <div class="container">
-                <h1>Contact</h1>
-                <p>お気軽にお問い合わせください</p>
+                <div class="hero-content">
+                    <h1 class="hero-title fade-in-up">Contact</h1>
+                    <p class="hero-description fade-in-up">お気軽にお問い合わせください</p>
+                </div>
             </div>
         </section>
 
-        <section class="contact-content">
+        <section class="contact-content section-padding">
             <div class="container">
-                <div class="contact-info">
-                    <h2>お問い合わせ方法</h2>
-                    <div class="contact-method">
-                        <h3>Email</h3>
-                        <p class="email-address">
-                            <a href="mailto:comotopy@gmail.com?subject=【Comotopy】お問い合わせ">comotopy@gmail.com</a>
-                        </p>
-                        <p class="note">メールアドレスをクリックすると、お使いのメールソフトが起動します。</p>
+                <div class="contact-grid">
+                    <div class="contact-info reveal-up">
+                        <h2>お問い合わせ方法</h2>
+                        <div class="contact-method">
+                            <div class="contact-icon">✉️</div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p class="email-address">
+                                    <a href="mailto:comotopy@gmail.com?subject=【Comotopy】お問い合わせ&body=お問い合わせありがとうございます。%0D%0A%0D%0A■ お問い合わせ内容：%0D%0A%0D%0A■ ご相談の背景・目的：%0D%0A%0D%0A■ 現状の課題やゴール：%0D%0A%0D%0A■ ご希望の時期：%0D%0A%0D%0A■ 予算感（任意）：%0D%0A%0D%0A何でもお気軽にご相談ください。">
+                                        comotopy@gmail.com
+                                    </a>
+                                </p>
+                                <p class="contact-note">メールアドレスをクリックすると、お使いのメールソフトが起動します。</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-guidelines reveal-up">
+                        <h3>ご相談時にお教えいただけると助かること</h3>
+                        <ul class="guidelines-list">
+                            <li>
+                                <span class="guideline-icon">🎯</span>
+                                <div>
+                                    <strong>ご相談の背景・目的</strong>
+                                    <p>どのような課題を解決したいかお聞かせください</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="guideline-icon">📊</span>
+                                <div>
+                                    <strong>現状の課題やゴール</strong>
+                                    <p>分かる範囲で構いませんので、現在の状況をお教えください</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="guideline-icon">📅</span>
+                                <div>
+                                    <strong>ご希望の時期</strong>
+                                    <p>いつ頃から開始をお考えかお聞かせください</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="guideline-icon">💰</span>
+                                <div>
+                                    <strong>予算感（任意）</strong>
+                                    <p>大まかな予算感があればお教えください</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <p class="response-time">通常1〜2営業日以内にご返信いたします。</p>
                     </div>
                 </div>
             </div>
@@ -55,7 +103,18 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; <span class="year"></span> Comotopy. All rights reserved.</p>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Comotopy</h3>
+                    <p>「こうしたい！」をアイデアと技術で形にする</p>
+                </div>
+                <div class="footer-contact">
+                    <a href="mailto:comotopy@gmail.com" class="footer-email">comotopy@gmail.com</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span class="year"></span> Comotopy. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
