@@ -3,22 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comotopy｜Next-Gen Digital Innovation</title>
+    <title>Comotopy｜デジタルマーケティング支援・コンサルティング</title>
     <meta name="description" content="「こうしたい！」をアイデアと技術で形にする。次世代のデジタルマーケティングパートナー。">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+JP:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💡</text></svg>">
     
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Background Effects -->
-    <div class="cursor-glow" id="cursor-glow"></div>
-    <div class="bg-grid"></div>
-    
     <header class="header" id="header">
         <div class="container">
             <div class="header-brand">
@@ -26,12 +22,12 @@
             </div>
             <nav class="header-nav">
                 <ul class="nav-menu" id="nav-menu">
-                    <li><a href="#home" class="nav-link">01. Home</a></li>
-                    <li><a href="#about" class="nav-link">02. About</a></li>
-                    <li><a href="#services" class="nav-link">03. Services</a></li>
+                    <li><a href="#home" class="nav-link nav-active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
                     <li><a href="contact.html" class="nav-link nav-cta">Contact</a></li>
                 </ul>
-                <button class="hamburger" id="hamburger" aria-label="Menu">
+                <button class="hamburger" id="hamburger" aria-label="メニューを開閉">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -43,29 +39,29 @@
 
     <main>
         <section id="home" class="hero">
-            <div class="hero-bg">
-                <div class="floating-shapes">
-                    <div class="shape"></div>
-                    <div class="shape"></div>
-                    <div class="shape"></div>
-                    <div class="shape"></div>
-                </div>
-            </div>
+            <div class="hero-bg-pattern"></div>
             <div class="container">
                 <div class="hero-content">
                     <div class="hero-badge">
                         <span class="badge-text">Digital Innovation Partner</span>
-                        <div class="badge-shine"></div>
                     </div>
-                    <h1 class="hero-title">
+                    
+                    <!-- 大きく目立つComotopyブランド -->
+                    <div class="hero-brand-display">
+                        <h1 class="brand-name">Comotopy</h1>
+                    </div>
+                    
+                    <h2 class="hero-title">
                         <span class="title-line">「こうしたい！」を</span>
-                        <span class="title-line title-gradient">アイデアと技術</span>
+                        <span class="title-line title-highlight">アイデアと技術</span>
                         <span class="title-line">で形にする</span>
-                    </h1>
+                    </h2>
+                    
                     <p class="hero-description">
                         次世代のデジタル体験を創造し、ビジネスの可能性を無限大に。<br>
                         戦略から実行まで、革新的なソリューションを提供します。
                     </p>
+                    
                     <div class="hero-actions">
                         <a href="contact.html" class="btn btn-primary">
                             <span>Start Project</span>
@@ -73,61 +69,54 @@
                                 <path d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z" fill="currentColor"/>
                             </svg>
                         </a>
-                        <a href="#services" class="btn btn-ghost">
+                        <a href="#services" class="btn btn-secondary">
                             <span>View Services</span>
                         </a>
                     </div>
                 </div>
+                
                 <div class="hero-visual">
-                    <div class="terminal">
-                        <div class="terminal-header">
-                            <div class="terminal-dots">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                            <div class="terminal-title">comotopy.exe</div>
-                        </div>
-                        <div class="terminal-body">
-                            <div class="terminal-line">
-                                <span class="terminal-prompt">$</span>
-                                <span class="terminal-command" id="typing-text"></span>
-                                <span class="terminal-cursor">|</span>
-                            </div>
-                            <div class="terminal-output">
-                                <div class="output-line">✓ Analyzing market trends...</div>
-                                <div class="output-line">✓ Optimizing digital strategy...</div>
-                                <div class="output-line">✓ Generating solutions...</div>
-                                <div class="output-line success">Ready to transform!</div>
-                            </div>
-                        </div>
+                    <div class="hero-illustration">
+                        <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:0.8" />
+                                    <stop offset="100%" style="stop-color:#7ED4E6;stop-opacity:0.6" />
+                                </linearGradient>
+                            </defs>
+                            <rect x="50" y="50" width="300" height="200" rx="20" fill="url(#grad1)" opacity="0.3"/>
+                            <circle cx="120" cy="120" r="30" fill="#4A90E2" opacity="0.6"/>
+                            <circle cx="280" cy="180" r="25" fill="#7ED4E6" opacity="0.7"/>
+                            <rect x="200" y="100" width="80" height="60" rx="10" fill="#5BC0DE" opacity="0.5"/>
+                        </svg>
                     </div>
                 </div>
             </div>
         </section>
 
-<section id="about" class="section section-alt">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-number">01</span>
-            <h2 class="section-title">About Us</h2>
-            <p class="section-subtitle">革新的なアプローチで未来を創造</p>
-        </div>
-        
-        <div class="about-simple">
-            <div class="about-text-center">
-                <p class="text-large">
-                    変革が多く答えのない現代社会において、私たちは<strong>経験と実績</strong>を基盤に、
-                    最先端のテクノロジーと創造的な思考で最適解をご提供します。
-                </p>
-                <p class="about-description">
-                    クライアント様の「こうしたい！」という想いを形にするため、
-                    迅速かつ丁寧な対応で、持続的な成長を実現します。
-                </p>
+        <section id="about" class="section section-light">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">01</span>
+                    <h2 class="section-title">About Us</h2>
+                    <p class="section-subtitle">革新的なアプローチで未来を創造</p>
+                </div>
+                
+                <div class="about-simple">
+                    <div class="about-text-center">
+                        <p class="text-large">
+                            変革が多く答えのない現代社会において、私たちは<strong>経験と実績</strong>を基盤に、
+                            最先端のテクノロジーと創造的な思考で最適解をご提供します。
+                        </p>
+                        <p class="about-description">
+                            クライアント様の「こうしたい！」という想いを形にするため、
+                            迅速かつ丁寧な対応で、持続的な成長を実現します。
+                        </p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
+
         <section id="services" class="section">
             <div class="container">
                 <div class="section-header">
@@ -139,8 +128,10 @@
                 <div class="services-grid">
                     <div class="service-card service-featured">
                         <div class="service-header">
-                            <div class="service-icon">📈</div>
-                            <h3>Digital Marketing</h3>
+                            <div class="service-info">
+                                <div class="service-icon">📈</div>
+                                <h3>Digital Marketing</h3>
+                            </div>
                             <div class="service-badge">Premium</div>
                         </div>
                         <ul class="service-list">
@@ -155,8 +146,10 @@
 
                     <div class="service-card">
                         <div class="service-header">
-                            <div class="service-icon">💻</div>
-                            <h3>Web Development</h3>
+                            <div class="service-info">
+                                <div class="service-icon">💻</div>
+                                <h3>Web Development</h3>
+                            </div>
                         </div>
                         <p class="service-description">
                             モダンな技術スタックによる高性能Webアプリケーション開発
@@ -165,8 +158,10 @@
 
                     <div class="service-card">
                         <div class="service-header">
-                            <div class="service-icon">🔍</div>
-                            <h3>SEO Optimization</h3>
+                            <div class="service-info">
+                                <div class="service-icon">🔍</div>
+                                <h3>SEO Optimization</h3>
+                            </div>
                         </div>
                         <p class="service-description">
                             最新アルゴリズムに対応した戦略的SEO施策
@@ -175,8 +170,10 @@
 
                     <div class="service-card">
                         <div class="service-header">
-                            <div class="service-icon">📍</div>
-                            <h3>Local SEO (MEO)</h3>
+                            <div class="service-info">
+                                <div class="service-icon">📍</div>
+                                <h3>Local SEO (MEO)</h3>
+                            </div>
                         </div>
                         <p class="service-description">
                             地域密着型ビジネスの集客力を最大化
@@ -185,8 +182,10 @@
 
                     <div class="service-card">
                         <div class="service-header">
-                            <div class="service-icon">📸</div>
-                            <h3>Instagram Growth</h3>
+                            <div class="service-info">
+                                <div class="service-icon">📸</div>
+                                <h3>Instagram Growth</h3>
+                            </div>
                         </div>
                         <p class="service-description">
                             ブランディングと集客を両立するInstagram戦略
@@ -195,8 +194,10 @@
 
                     <div class="service-card">
                         <div class="service-header">
-                            <div class="service-icon">🐦</div>
-                            <h3>X (Twitter) Marketing</h3>
+                            <div class="service-info">
+                                <div class="service-icon">🐦</div>
+                                <h3>X (Twitter) Marketing</h3>
+                            </div>
                         </div>
                         <p class="service-description">
                             リアルタイムエンゲージメントでファン獲得
@@ -242,4 +243,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
