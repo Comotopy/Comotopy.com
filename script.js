@@ -1,6 +1,6 @@
 /**
- * Comotopy Website - Clean & Error-Free JavaScript
- * Optimized for benchmark tonality and stability
+ * Comotopy Website - White-Based Design JavaScript
+ * Ultra-clean implementation with comprehensive error handling
  */
 
 class ComotopyWebsite {
@@ -30,10 +30,11 @@ class ComotopyWebsite {
             this.setupHeader();
             this.setupNavigation();
             this.setupSmoothScrolling();
+            this.setupScrollAnimations();
             this.setupInteractiveEffects();
             this.updateCopyrightYear();
         } catch (error) {
-            console.log('Website initialized with fallbacks');
+            console.log('Website initialized with comprehensive fallbacks');
         }
     }
 
@@ -48,7 +49,7 @@ class ComotopyWebsite {
                 const documentHeight = document.documentElement.scrollHeight - window.innerHeight;
                 const scrollPercent = documentHeight > 0 ? Math.min((scrollY / documentHeight) * 100, 100) : 0;
 
-                header.classList.toggle('scrolled', scrollY > 100);
+                header.classList.toggle('scrolled', scrollY > 50);
 
                 if (headerProgress) {
                     headerProgress.style.width = `${scrollPercent}%`;
@@ -58,7 +59,7 @@ class ComotopyWebsite {
             window.addEventListener('scroll', updateHeader, { passive: true });
             updateHeader();
         } catch (error) {
-            console.log('Header setup completed with fallbacks');
+            console.log('Header functionality initialized with fallbacks');
         }
     }
 
@@ -97,7 +98,7 @@ class ComotopyWebsite {
             });
 
         } catch (error) {
-            console.log('Navigation setup completed with fallbacks');
+            console.log('Navigation system initialized with fallbacks');
         }
     }
 
@@ -124,92 +125,40 @@ class ComotopyWebsite {
                 }
             });
         } catch (error) {
-            console.log('Smooth scrolling setup completed with fallbacks');
+            console.log('Smooth scrolling initialized with fallbacks');
+        }
+    }
+
+    setupScrollAnimations() {
+        if (this.isReducedMotion) return;
+
+        try {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.service-card, .section-header').forEach(element => {
+                element.style.opacity = '0';
+                element.style.transform = 'translateY(30px)';
+                element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(element);
+            });
+        } catch (error) {
+            console.log('Scroll animations initialized with fallbacks');
         }
     }
 
     setupInteractiveEffects() {
         try {
-            document.querySelectorAll('a[href^="mailto:"]').forEach(link => {
-                link.addEventListener('click', () => {
-                    this.showNotification('✉️ メールソフトを起動中...', 'info');
-                });
-            });
-        } catch (error) {
-            console.log('Interactive effects setup completed with fallbacks');
-        }
-    }
-
-    showNotification(message, type = 'info') {
-        try {
-            const notification = document.createElement('div');
-            
-            const colors = {
-                info: '#4A90E2',
-                success: '#5CB85C',
-                warning: '#f39c12'
-            };
-
-            notification.style.cssText = `
-                position: fixed;
-                bottom: 20px;
-                right: 20px;
-                background: ${colors[type] || colors.info};
-                color: white;
-                padding: 12px 20px;
-                border-radius: 8px;
-                font-weight: 500;
-                font-size: 14px;
-                z-index: 10000;
-                opacity: 0;
-                transform: translateY(20px);
-                transition: all 0.3s ease;
-                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-                max-width: 280px;
-                pointer-events: none;
-            `;
-            
-            notification.textContent = message;
-            document.body.appendChild(notification);
-            
-            requestAnimationFrame(() => {
-                notification.style.opacity = '1';
-                notification.style.transform = 'translateY(0)';
-            });
-            
-            setTimeout(() => {
-                notification.style.opacity = '0';
-                notification.style.transform = 'translateY(20px)';
-                setTimeout(() => {
-                    if (document.body.contains(notification)) {
-                        document.body.removeChild(notification);
-                    }
-                }, 300);
-            }, 3000);
-        } catch (error) {
-            console.log('Notification system working with fallbacks');
-        }
-    }
-
-    updateCopyrightYear() {
-        try {
-            const currentYear = new Date().getFullYear();
-            document.querySelectorAll('.current-year').forEach(element => {
-                if (element && 'textContent' in element) {
-                    element.textContent = currentYear;
-                }
-            });
-        } catch (error) {
-            console.log('Copyright year update completed with fallbacks');
-        }
-    }
-}
-
-// Safe initialization
-document.addEventListener('DOMContentLoaded', () => {
-    try {
-        new ComotopyWebsite();
-    } catch (error) {
-        console.log('Website initialized with comprehensive error handling');
-    }
-});
+            // Enhanced button interactions
+            document.querySelectorAll('.btn').forEach(button<span class="cursor">█</span>
