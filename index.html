@@ -3,273 +3,488 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comotopy｜マーケティング支援・コンサルティング</title>
-    <meta name="description" content="「こうしたい！」をアイデアと技術で形にする。次世代のデジタルマーケティングパートナー。">
+    <meta name="description" content="Comotopy - お客様の「こうしたい！」を最適な技術で実現。マーケティングとコンサルティングのプロフェッショナルサービス">
+    <meta name="keywords" content="Comotopy, マーケティング, コンサルティング, SEO, SNS, AI, Webマーケティング">
+    <meta name="author" content="Comotopy">
     
+    <!-- OGP Meta Tags -->
+    <meta property="og:title" content="Comotopy - お客様の「こうしたい！」を最適な技術で実現">
+    <meta property="og:description" content="最先端のテクノロジーと創造的な思考で最適解をご提供します">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://comotopy.com">
+    <meta property="og:image" content="https://comotopy.com/og-image.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Comotopy">
+    <meta name="twitter:description" content="お客様の「こうしたい！」を最適な技術で実現">
+    
+    <title>Comotopy - お客様の「こうしたい！」を最適な技術で実現</title>
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+JP:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
     
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>C</text></svg>">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
     
-    <link rel="stylesheet" href="style.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" href="/favicon.png">
 </head>
 <body>
+    <!-- Skip to Content (Accessibility) -->
+    <a href="#main" class="skip-to-content">メインコンテンツへスキップ</a>
+    
+    <!-- Header -->
     <header class="header" id="header">
-        <div class="container">
-            <div class="header-brand">
-                <h1><a href="index.html" class="logo-text">Comotopy</a></h1>
-            </div>
-            <nav class="header-nav">
-                <ul class="nav-menu" id="nav-menu">
-<li><a href="#home" class="nav-link nav-active">ホーム</a></li>
-<li><a href="#about" class="nav-link">私たちについて</a></li>
-<li><a href="#services" class="nav-link">サービス</a></li>
-<li><a href="contact.html" class="nav-link nav-cta">お問い合わせ</a></li>
+        <div class="container header-container">
+            <!-- Logo -->
+            <a href="#" class="logo" aria-label="Comotopy ホーム">
+                <span class="logo-text">Comotopy</span>
+            </a>
+            
+            <!-- Navigation -->
+            <nav class="nav" role="navigation" aria-label="メインナビゲーション">
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active">ホーム</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">Comotopyについて</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link">サービス</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link btn btn-primary btn-sm">お問い合わせ</a>
+                    </li>
                 </ul>
-                <button class="hamburger" id="hamburger" aria-label="メニューを開閉">
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="メニューを開く" aria-expanded="false">
                     <span></span>
                     <span></span>
                     <span></span>
                 </button>
             </nav>
         </div>
-        <div class="header-progress" id="header-progress"></div>
+        
+        <!-- Progress Bar -->
+        <div class="header-progress" id="headerProgress"></div>
     </header>
-
-    <main>
-        <section id="home" class="hero">
-            <div class="hero-bg-pattern"></div>
-            <div class="container">
+    
+    <!-- Main Content -->
+    <main id="main">
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-bg-pattern" aria-hidden="true"></div>
+            <div class="container hero-container">
                 <div class="hero-content">
+                    <!-- Badge -->
                     <div class="hero-badge">
-                        <span class="badge-text">Digital Innovation Partner</span>
+                        <span>🚀 イノベーションを加速</span>
                     </div>
                     
-                    <!-- 超巨大Comotopyブランド表示 -->
-                    <div class="hero-brand-mega">
-                        <h1 class="mega-brand-name">Comotopy</h1>
-                    </div>
+                    <!-- Main Title -->
+                    <h1 class="hero-title">
+                        <span class="hero-title-brand">Comotopy</span><br>
+                        <span style="font-size: var(--text-3xl); font-weight: 700;">
+                            お客様の「こうしたい！」を<br class="md:hidden">
+                            最適な技術で実現
+                        </span>
+                    </h1>
                     
-<h2 class="hero-title">
-    <span class="title-line">お客様の「こうしたい！」を最適な戦略と技術で実現します</span>
-</h2>
-<p class="hero-description">
-    変化の激しい現代社会で、お客様のビジネスが成長し続けるための<br>
-    デジタルマーケティング戦略と実行をサポート
-</p>
+                    <!-- Description -->
+                    <p class="hero-description">
+                        最先端のマーケティング戦略とコンサルティングサービスで、
+                        あなたのビジネスを次のレベルへ導きます。
+                    </p>
                     
+                    <!-- CTA Buttons -->
                     <div class="hero-actions">
-                        <a href="contact.html" class="btn btn-primary">
-                            <span>Start Project</span>
-                            <svg class="btn-icon" width="16" height="16" viewBox="0 0 16 16">
-                                <path d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z" fill="currentColor"/>
+                        <a href="#services" class="btn btn-primary btn-lg">
+                            サービスを見る
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
                             </svg>
                         </a>
-                        <a href="#services" class="btn btn-secondary">
-                            <span>View Services</span>
+                        <a href="#contact" class="btn btn-secondary btn-lg">
+                            無料相談を予約
                         </a>
                     </div>
                 </div>
                 
+                <!-- Hero Visual -->
                 <div class="hero-visual">
-                    <div class="hero-illustration">
-                        <svg viewBox="0 0 500 350" xmlns="http://www.w3.org/2000/svg">
-                            <defs>
-                                <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" style="stop-color:#7ED4E6;stop-opacity:0.8" />
-                                    <stop offset="100%" style="stop-color:#4A90E2;stop-opacity:0.6" />
-                                </linearGradient>
-                                <linearGradient id="lightBlue" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" style="stop-color:#E8F6FF;stop-opacity:0.9" />
-                                    <stop offset="100%" style="stop-color:#B8E6FF;stop-opacity:0.7" />
-                                </linearGradient>
-                            </defs>
-                            
-                            <!-- Abstract geometric shapes -->
-                            <circle cx="120" cy="100" r="60" fill="url(#lightBlue)" opacity="0.7"/>
-                            <rect x="200" y="80" width="180" height="120" rx="15" fill="url(#blueGrad)" opacity="0.6"/>
-                            <circle cx="350" cy="200" r="40" fill="#B8E6FF" opacity="0.8"/>
-                            <polygon points="100,250 150,200 200,250 150,300" fill="#7ED4E6" opacity="0.5"/>
-                            
-                            <!-- Connecting lines -->
-                            <path d="M 120 160 Q 200 180 280 160" stroke="#4A90E2" stroke-width="3" fill="none" opacity="0.6"/>
-                            <path d="M 200 200 Q 300 220 400 200" stroke="#7ED4E6" stroke-width="2" fill="none" opacity="0.7"/>
-                        </svg>
-                    </div>
+                    <svg class="hero-illustration" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Decorative circles and shapes -->
+                        <circle cx="300" cy="200" r="150" fill="url(#gradient1)" opacity="0.1"/>
+                        <circle cx="400" cy="150" r="80" fill="url(#gradient2)" opacity="0.15"/>
+                        <circle cx="200" cy="250" r="60" fill="url(#gradient3)" opacity="0.1"/>
+                        
+                        <!-- Network connections -->
+                        <path d="M200,200 L400,200 L300,100 Z" stroke="#4A90E2" stroke-width="2" fill="none" opacity="0.3"/>
+                        <path d="M150,250 L450,250 L300,350 Z" stroke="#7ED4E6" stroke-width="2" fill="none" opacity="0.3"/>
+                        
+                        <!-- Nodes -->
+                        <circle cx="200" cy="200" r="8" fill="#4A90E2"/>
+                        <circle cx="400" cy="200" r="8" fill="#4A90E2"/>
+                        <circle cx="300" cy="100" r="8" fill="#7ED4E6"/>
+                        <circle cx="150" cy="250" r="8" fill="#7ED4E6"/>
+                        <circle cx="450" cy="250" r="8" fill="#7ED4E6"/>
+                        <circle cx="300" cy="350" r="8" fill="#4A90E2"/>
+                        
+                        <!-- Gradients -->
+                        <defs>
+                            <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#7ED4E6;stop-opacity:1" />
+                            </linearGradient>
+                            <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#7ED4E6;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#B8E6FF;stop-opacity:1" />
+                            </linearGradient>
+                            <linearGradient id="gradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#B8E6FF;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#E8F6FF;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
                 </div>
             </div>
         </section>
-
-        <section id="about" class="section section-light">
+        
+        <!-- About Section -->
+        <section class="section section-light" id="about">
             <div class="container">
                 <div class="section-header">
                     <span class="section-number">01</span>
-<h2 class="section-title">Comotopyについて</h2>
-<p class="section-subtitle">お客様の成長を支える私たちの強み</p>
+                    <h2 class="section-title">Comotopyについて</h2>
                 </div>
                 
-                <div class="about-simple">
-                    <div class="about-text-center">
-                        <p class="text-large">
-                            変革が多く答えのない現代社会において、私たちは<strong>経験と実績</strong>を基盤に、
-                            最先端のテクノロジーと創造的な思考で最適解をご提供します。
-                        </p>
-                        <p class="about-description">
-                            クライアント様の「こうしたい！」という想いを形にするため、
-                            迅速かつ丁寧な対応で、持続的な成長を実現します。
-                        </p>
+                <div class="about-content" style="max-width: 900px; margin: 0 auto;">
+                    <p class="text-large text-center">
+                        変革が多く答えのない現代社会において、私たちは<strong>経験と実績</strong>を基盤に、
+                        最先端のテクノロジーと創造的な思考で<strong>最適解</strong>をご提供します。
+                    </p>
+                    
+                    <p class="section-subtitle text-center mt-6">
+                        「こうしたい！」という想いを形にするため、<br>
+                        迅速かつ丁寧な対応で、持続的な成長を実現します。
+                    </p>
+                    
+                    <!-- Value Propositions -->
+                    <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--space-8); margin-top: var(--space-12);">
+                        <div class="text-center">
+                            <div class="service-icon mx-auto mb-4">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-bold text-lg mb-2">迅速な対応</h3>
+                            <p class="text-secondary">スピーディーな意思決定と実行で、ビジネスチャンスを逃しません</p>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="service-icon mx-auto mb-4">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-bold text-lg mb-2">確かな実績</h3>
+                            <p class="text-secondary">多様な業界での成功事例と豊富な経験を活かします</p>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="service-icon mx-auto mb-4">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 6v6l4 2"/>
+                                </svg>
+                            </div>
+                            <h3 class="font-bold text-lg mb-2">持続的成長</h3>
+                            <p class="text-secondary">短期的な成果だけでなく、長期的な成長戦略を提供します</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <section id="services" class="section">
+        
+        <!-- Services Section -->
+        <section class="section" id="services">
             <div class="container">
                 <div class="section-header">
                     <span class="section-number">02</span>
-<h2 class="section-title">サービス内容</h2>
-<p class="section-subtitle">お客様の課題を解決する最適なソリューション</p>
+                    <h2 class="section-title">サービス内容</h2>
+                    <p class="section-subtitle">
+                        デジタル時代に最適化された、包括的なビジネスソリューション
+                    </p>
                 </div>
                 
                 <div class="services-grid">
-                    <div class="service-card service-featured">
-                        <div class="service-header">
-                            <div class="service-info">
-                                <div class="service-icon">📈</div>
-                                <h3>Digital Marketing</h3>
-                            </div>
-                            <div class="service-badge">Premium</div>
+                    <!-- Marketing Service Card -->
+                    <div class="service-card service-card-featured">
+                        <div class="service-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                <line x1="9" y1="9" x2="15" y2="9"/>
+                                <line x1="9" y1="13" x2="15" y2="13"/>
+                                <line x1="9" y1="17" x2="13" y2="17"/>
+                            </svg>
                         </div>
-                        <ul class="service-list">
-                            <li>Webマーケティング</li>
-                            <li>SNSマーケティング</li>
-                            <li>AIアドバイス</li>
+                        <h3 class="service-title">マーケティング</h3>
+                        <p class="service-description">
+                            データドリブンなアプローチで、効果的なマーケティング戦略を構築します。
+                        </p>
+                        <ul class="service-features">
+                            <li>Webマーケティング戦略立案</li>
+                            <li>SNSマーケティング運用</li>
+                            <li>コンテンツマーケティング</li>
+                            <li>パフォーマンス分析・改善</li>
                         </ul>
-                        <p class="service-description">
-                            AIとデータサイエンスを活用した次世代マーケティング戦略
-                        </p>
-                        
                     </div>
-
+                    
+                    <!-- Consulting Service Card -->
                     <div class="service-card">
-                        <div class="service-header">
-                            <div class="service-info">
-                                <div class="service-icon">💻</div>
-                                <h3>Web Development</h3>
-                            </div>
+                        <div class="service-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 16v-4"/>
+                                <path d="M12 8h.01"/>
+                            </svg>
                         </div>
+                        <h3 class="service-title">コンサルティング</h3>
                         <p class="service-description">
-                            モダンな技術スタックによる高性能Webアプリケーション開発
+                            専門知識と最新技術を活用し、ビジネス課題の解決をサポートします。
                         </p>
+                        <ul class="service-features">
+                            <li>SEO最適化戦略</li>
+                            <li>SNS運用コンサルティング</li>
+                            <li>AI活用支援</li>
+                            <li>デジタルトランスフォーメーション</li>
+                        </ul>
                     </div>
-
+                    
+                    <!-- Additional Service Card -->
                     <div class="service-card">
-                        <div class="service-header">
-                            <div class="service-info">
-                                <div class="service-icon">🔍</div>
-                                <h3>SEO Optimization</h3>
-                            </div>
+                        <div class="service-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                            </svg>
                         </div>
+                        <h3 class="service-title">分析・最適化</h3>
                         <p class="service-description">
-                            最新アルゴリズムに対応した戦略的SEO施策
+                            詳細なデータ分析により、ビジネスの成長機会を発見し最適化します。
                         </p>
+                        <ul class="service-features">
+                            <li>ウェブサイト分析</li>
+                            <li>ユーザー行動分析</li>
+                            <li>競合分析</li>
+                            <li>ROI最適化</li>
+                        </ul>
                     </div>
-
-                    <div class="service-card">
-                        <div class="service-header">
-                            <div class="service-info">
-                                <div class="service-icon">📍</div>
-                                <h3>Local SEO (MEO)</h3>
-                            </div>
-                        </div>
-                        <p class="service-description">
-                            地域密着型ビジネスの集客力を最大化
-                        </p>
-                    </div>
-
-                    <div class="service-card">
-                        <div class="service-header">
-                            <div class="service-info">
-                                <div class="service-icon">📸</div>
-                                <h3>Instagram Growth</h3>
-                            </div>
-                        </div>
-                        <p class="service-description">
-                            ブランディングと集客を両立するInstagram戦略
-                        </p>
-                    </div>
-
-                    <div class="service-card">
-                        <div class="service-header">
-                            <div class="service-info">
-                                <div class="service-icon">🐦</div>
-                                <h3>X (Twitter) Marketing</h3>
-                            </div>
-                        </div>
-                        <p class="service-description">
-                            リアルタイムエンゲージメントでファン獲得
-                        </p>
-                    </div>
-                    <div class="service-card">
-    <div class="service-header">
-        <div class="service-info">
-            <div class="service-icon">🤖</div>
-            <h3>AIアドバイス</h3>
-        </div>
-    </div>
-    <ul class="service-list">
-        <li>AI活用戦略の立案・実行支援</li>
-        <li>ChatGPT等の導入・運用サポート</li>
-        <li>業務効率化のためのAI活用提案</li>
-    </ul>
-    <p class="service-description">
-        生成AIの活用で業務効率を大幅に向上。導入から運用まで包括的にサポートします。
-    </p>
-</div>
-
                 </div>
-
+                
+                <!-- CTA Section -->
                 <div class="cta-section">
                     <div class="cta-card">
-                        <h3>Ready to Transform?</h3>
-                        <p>次のレベルへ。無料コンサルテーションで可能性を探りましょう。</p>
-<a href="contact.html" class="btn btn-primary">
-    <span>ご相談はこちら</span>
-    <!-- SVGアイコン -->
-</a>
-<a href="#services" class="btn btn-secondary">
-    <span>サービスを見る</span>
-</a>
+                        <h3>ビジネスの成長を加速させましょう</h3>
+                        <p>まずは無料相談から。お客様のニーズに合わせた最適なソリューションをご提案します。</p>
+                        <div class="flex gap-4 justify-center">
+                            <a href="#contact" class="btn btn-primary btn-lg">
+                                無料相談を申し込む
+                            </a>
+                            <a href="#" class="btn btn-secondary btn-lg">
+                                資料をダウンロード
+                            </a>
+                        </div>
                     </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section class="section section-light" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-number">03</span>
+                    <h2 class="section-title">お問い合わせ</h2>
+                    <p class="section-subtitle">
+                        お気軽にご相談ください。24時間以内にご返信いたします。
+                    </p>
+                </div>
+                
+                <div style="max-width: 600px; margin: 0 auto;">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">お名前 *</label>
+                            <input type="text" id="name" name="name" class="form-input" required placeholder="山田 太郎">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">メールアドレス *</label>
+                            <input type="email" id="email" name="email" class="form-input" required placeholder="example@email.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company" class="form-label">会社名</label>
+                            <input type="text" id="company" name="company" class="form-input" placeholder="株式会社〇〇">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service" class="form-label">ご興味のあるサービス</label>
+                            <select id="service" name="service" class="form-input">
+                                <option value="">選択してください</option>
+                                <option value="marketing">マーケティング</option>
+                                <option value="consulting">コンサルティング</option>
+                                <option value="analysis">分析・最適化</option>
+                                <option value="other">その他</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">お問い合わせ内容 *</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="5" required placeholder="ご相談内容をお聞かせください"></textarea>
+                        </div>
+                        
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                送信する
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>
     </main>
-
-    <footer class="footer">
+    
+    <!-- Footer -->
+    <footer class="footer bg-secondary" style="padding: var(--space-16) 0 var(--space-8) 0;">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <h3 class="footer-logo">Comotopy</h3>
-                    <p class="footer-tagline">Digital Innovation Partner</p>
+            <div class="text-center">
+                <div class="logo mb-6">
+                    <span class="logo-text" style="font-size: var(--text-3xl);">Comotopy</span>
                 </div>
-                <div class="footer-contact">
-                    <a href="mailto:comotopy@gmail.com" class="footer-link">
-                        comotopy@gmail.com
-                    </a>
+                <p class="text-secondary mb-8">
+                    お客様の「こうしたい！」を最適な技術で実現
+                </p>
+                <div class="flex gap-6 justify-center mb-8">
+                    <a href="#" class="text-secondary hover:text-brand">プライバシーポリシー</a>
+                    <a href="#" class="text-secondary hover:text-brand">利用規約</a>
+                    <a href="#" class="text-secondary hover:text-brand">会社概要</a>
                 </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; <span class="current-year">2024</span> Comotopy. All rights reserved.</p>
+                <p class="text-muted">
+                    © 2024 Comotopy. All rights reserved.
+                </p>
             </div>
         </div>
     </footer>
-
-<script src="script.js" defer></script>
+    
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const navMenu = document.getElementById('navMenu');
+        
+        mobileMenuToggle.addEventListener('click', () => {
+            mobileMenuToggle.classList.toggle('active');
+            navMenu.classList.toggle('active');
+            const isExpanded = mobileMenuToggle.classList.contains('active');
+            mobileMenuToggle.setAttribute('aria-expanded', isExpanded);
+        });
+        
+        // Header Scroll Effect
+        const header = document.getElementById('header');
+        const headerProgress = document.getElementById('headerProgress');
+        
+        window.addEventListener('scroll', () => {
+            const scrolled = window.scrollY > 50;
+            header.classList.toggle('scrolled', scrolled);
+            
+            // Progress Bar
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled_percentage = (winScroll / height) * 100;
+            headerProgress.style.width = scrolled_percentage + '%';
+        });
+        
+        // Smooth Scroll for Navigation Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const headerOffset = 80;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                    
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    mobileMenuToggle.classList.remove('active');
+                    navMenu.classList.remove('active');
+                }
+            });
+        });
+        
+        // Active Navigation Link
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').slice(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+        
+        // Form Submission
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            // ここに実際の送信処理を追加
+            alert('お問い合わせありがとうございます。24時間以内にご返信いたします。');
+            contactForm.reset();
+        });
+        
+        // Intersection Observer for Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fadeInUp');
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('.service-card, .section-header').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
 </body>
 </html>
-
-
-
-
