@@ -5,485 +5,951 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Comotopy - お客様の「こうしたい！」を最適な技術で実現。マーケティングとコンサルティングのプロフェッショナルサービス">
     <meta name="keywords" content="Comotopy, マーケティング, コンサルティング, SEO, SNS, AI, Webマーケティング">
-    <meta name="author" content="Comotopy">
-    
-    <!-- OGP Meta Tags -->
-    <meta property="og:title" content="Comotopy - お客様の「こうしたい！」を最適な技術で実現">
-    <meta property="og:description" content="最先端のテクノロジーと創造的な思考で最適解をご提供します">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://comotopy.com">
-    <meta property="og:image" content="https://comotopy.com/og-image.jpg">
-    
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Comotopy">
-    <meta name="twitter:description" content="お客様の「こうしたい！」を最適な技術で実現">
-    
     <title>Comotopy - お客様の「こうしたい！」を最適な技術で実現</title>
     
-    <!-- Fonts -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
     
-    <!-- CSS -->
-    <link rel="stylesheet" href="styles.css">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-    <link rel="icon" type="image/png" href="/favicon.png">
+    <style>
+        /* ===== CSS VARIABLES ===== */
+        :root {
+            --color-primary: #ffffff;
+            --color-secondary: #f8fafb;
+            --color-brand: #4A90E2;
+            --color-brand-dark: #3a7bc8;
+            --color-brand-light: #7ED4E6;
+            --color-brand-bg: #E8F6FF;
+            --color-text-primary: #1a1a1a;
+            --color-text-secondary: #4a4a4a;
+            --color-text-muted: #888888;
+            --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.06);
+            --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+            --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.16);
+        }
+
+        /* ===== RESET ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', 'Noto Sans JP', -apple-system, sans-serif;
+            color: var(--color-text-primary);
+            background: var(--color-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* ===== CONTAINER ===== */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ===== HEADER ===== */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .header.scrolled {
+            box-shadow: var(--shadow-md);
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: var(--color-brand);
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        .nav {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-link {
+            color: var(--color-text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            position: relative;
+            transition: color 0.3s ease;
+            padding: 0.5rem 0;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--color-brand);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--color-brand);
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .btn-contact {
+            background: var(--color-brand);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-contact:hover {
+            background: var(--color-brand-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        /* ===== MOBILE MENU ===== */
+        .mobile-menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 4px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+        }
+
+        .mobile-menu-toggle span {
+            width: 24px;
+            height: 2px;
+            background: var(--color-text-secondary);
+            transition: all 0.3s ease;
+        }
+
+        /* ===== HERO SECTION ===== */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 120px 0 80px;
+            background: linear-gradient(135deg, rgba(74, 144, 226, 0.05) 0%, rgba(126, 212, 230, 0.05) 100%);
+            position: relative;
+        }
+
+        .hero-content {
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: var(--color-brand-bg);
+            color: var(--color-brand);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            animation: fadeInDown 0.8s ease;
+        }
+
+        .hero-title {
+            font-size: clamp(3rem, 8vw, 5rem);
+            font-weight: 900;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--color-brand) 0%, var(--color-brand-light) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: fadeInUp 0.8s ease;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.25rem, 3vw, 2rem);
+            font-weight: 700;
+            color: var(--color-text-primary);
+            margin-bottom: 1.5rem;
+            animation: fadeInUp 0.8s ease 0.2s both;
+        }
+
+        .hero-description {
+            font-size: 1.125rem;
+            color: var(--color-text-secondary);
+            margin-bottom: 3rem;
+            line-height: 1.8;
+            animation: fadeInUp 0.8s ease 0.4s both;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 0.8s ease 0.6s both;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary {
+            background: var(--color-brand);
+            color: white;
+            box-shadow: var(--shadow-md);
+        }
+
+        .btn-primary:hover {
+            background: var(--color-brand-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: var(--color-brand);
+            border: 2px solid var(--color-brand);
+        }
+
+        .btn-secondary:hover {
+            background: var(--color-brand-bg);
+            transform: translateY(-2px);
+        }
+
+        /* ===== ABOUT SECTION ===== */
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-light {
+            background: var(--color-secondary);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-number {
+            color: var(--color-brand);
+            font-weight: 700;
+            font-size: 0.875rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+            font-size: 1.125rem;
+            color: var(--color-text-secondary);
+            line-height: 1.8;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .about-content {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .about-text {
+            font-size: 1.25rem;
+            line-height: 1.8;
+            color: var(--color-text-secondary);
+            margin-bottom: 2rem;
+        }
+
+        .about-text strong {
+            color: var(--color-brand);
+            font-weight: 700;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .value-card {
+            text-align: center;
+            padding: 2rem;
+            background: white;
+            border-radius: 16px;
+            transition: transform 0.3s ease;
+        }
+
+        .value-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .value-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--color-brand-bg);
+            color: var(--color-brand);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-size: 1.5rem;
+        }
+
+        .value-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .value-description {
+            color: var(--color-text-secondary);
+            line-height: 1.6;
+        }
+
+        /* ===== SERVICES SECTION ===== */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 20px;
+            border: 1px solid rgba(74, 144, 226, 0.1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--color-brand), var(--color-brand-light));
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--color-brand);
+        }
+
+        .service-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .service-card.featured {
+            background: linear-gradient(135deg, rgba(74, 144, 226, 0.05) 0%, rgba(126, 212, 230, 0.05) 100%);
+            border-color: var(--color-brand);
+        }
+
+        .service-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--color-brand-bg);
+            color: var(--color-brand);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .service-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .service-description {
+            color: var(--color-text-secondary);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .service-list {
+            list-style: none;
+        }
+
+        .service-list li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            color: var(--color-text-secondary);
+        }
+
+        .service-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--color-brand);
+            font-weight: 700;
+        }
+
+        /* ===== CTA SECTION ===== */
+        .cta-section {
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        .cta-card {
+            background: linear-gradient(135deg, var(--color-brand) 0%, var(--color-brand-light) 100%);
+            padding: 4rem;
+            border-radius: 24px;
+            color: white;
+            box-shadow: var(--shadow-xl);
+        }
+
+        .cta-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+
+        .cta-description {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-white {
+            background: white;
+            color: var(--color-brand);
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-white:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-outline-white {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline-white:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+        }
+
+        /* ===== CONTACT SECTION ===== */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--color-text-primary);
+        }
+
+        .form-input,
+        .form-select,
+        .form-textarea {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: all 0.3s ease;
+        }
+
+        .form-input:focus,
+        .form-select:focus,
+        .form-textarea:focus {
+            outline: none;
+            border-color: var(--color-brand);
+            box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+        }
+
+        .form-textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .form-submit {
+            width: 100%;
+            background: var(--color-brand);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.125rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .form-submit:hover {
+            background: var(--color-brand-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            background: var(--color-text-primary);
+            color: white;
+            padding: 3rem 0 2rem;
+            text-align: center;
+        }
+
+        .footer-logo {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--color-brand-light);
+            margin-bottom: 1rem;
+        }
+
+        .footer-description {
+            opacity: 0.8;
+            margin-bottom: 2rem;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-link {
+            color: white;
+            text-decoration: none;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+
+        .footer-link:hover {
+            opacity: 1;
+        }
+
+        .footer-copyright {
+            opacity: 0.6;
+            font-size: 0.875rem;
+        }
+
+        /* ===== ANIMATIONS ===== */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            .nav {
+                display: none;
+            }
+
+            .mobile-menu-toggle {
+                display: flex;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .services-grid,
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-card {
+                padding: 2rem;
+            }
+
+            .cta-title {
+                font-size: 1.75rem;
+            }
+
+            .contact-form {
+                padding: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 16px;
+            }
+
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.25rem;
+            }
+
+            .section {
+                padding: 60px 0;
+            }
+        }
+    </style>
 </head>
 <body>
-    <!-- Skip to Content (Accessibility) -->
-    <a href="#main" class="skip-to-content">メインコンテンツへスキップ</a>
-    
     <!-- Header -->
     <header class="header" id="header">
         <div class="container header-container">
-            <!-- Logo -->
-            <a href="#" class="logo" aria-label="Comotopy ホーム">
-                <span class="logo-text">Comotopy</span>
-            </a>
-            
-            <!-- Navigation -->
-            <nav class="nav" role="navigation" aria-label="メインナビゲーション">
-                <ul class="nav-menu" id="navMenu">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link active">ホーム</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">Comotopyについて</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#services" class="nav-link">サービス</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link btn btn-primary btn-sm">お問い合わせ</a>
-                    </li>
-                </ul>
-                
-                <!-- Mobile Menu Toggle -->
-                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="メニューを開く" aria-expanded="false">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+            <a href="#" class="logo">Comotopy</a>
+            <nav class="nav">
+                <a href="#home" class="nav-link">ホーム</a>
+                <a href="#about" class="nav-link">Comotopyについて</a>
+                <a href="#services" class="nav-link">サービス</a>
+                <a href="#contact" class="btn-contact">お問い合わせ</a>
             </nav>
+            <button class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-        
-        <!-- Progress Bar -->
-        <div class="header-progress" id="headerProgress"></div>
     </header>
-    
-    <!-- Main Content -->
-    <main id="main">
-        <!-- Hero Section -->
-        <section class="hero" id="home">
-            <div class="hero-bg-pattern" aria-hidden="true"></div>
-            <div class="container hero-container">
-                <div class="hero-content">
-                    <!-- Badge -->
-                    <div class="hero-badge">
-                        <span>🚀 イノベーションを加速</span>
-                    </div>
-                    
-                    <!-- Main Title -->
-                    <h1 class="hero-title">
-                        <span class="hero-title-brand">Comotopy</span><br>
-                        <span style="font-size: var(--text-3xl); font-weight: 700;">
-                            お客様の「こうしたい！」を<br class="md:hidden">
-                            最適な技術で実現
-                        </span>
-                    </h1>
-                    
-                    <!-- Description -->
-                    <p class="hero-description">
-                        最先端のマーケティング戦略とコンサルティングサービスで、
-                        あなたのビジネスを次のレベルへ導きます。
-                    </p>
-                    
-                    <!-- CTA Buttons -->
-                    <div class="hero-actions">
-                        <a href="#services" class="btn btn-primary btn-lg">
-                            サービスを見る
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <line x1="5" y1="12" x2="19" y2="12"></line>
-                                <polyline points="12 5 19 12 12 19"></polyline>
-                            </svg>
-                        </a>
-                        <a href="#contact" class="btn btn-secondary btn-lg">
-                            無料相談を予約
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Hero Visual -->
-                <div class="hero-visual">
-                    <svg class="hero-illustration" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
-                        <!-- Decorative circles and shapes -->
-                        <circle cx="300" cy="200" r="150" fill="url(#gradient1)" opacity="0.1"/>
-                        <circle cx="400" cy="150" r="80" fill="url(#gradient2)" opacity="0.15"/>
-                        <circle cx="200" cy="250" r="60" fill="url(#gradient3)" opacity="0.1"/>
-                        
-                        <!-- Network connections -->
-                        <path d="M200,200 L400,200 L300,100 Z" stroke="#4A90E2" stroke-width="2" fill="none" opacity="0.3"/>
-                        <path d="M150,250 L450,250 L300,350 Z" stroke="#7ED4E6" stroke-width="2" fill="none" opacity="0.3"/>
-                        
-                        <!-- Nodes -->
-                        <circle cx="200" cy="200" r="8" fill="#4A90E2"/>
-                        <circle cx="400" cy="200" r="8" fill="#4A90E2"/>
-                        <circle cx="300" cy="100" r="8" fill="#7ED4E6"/>
-                        <circle cx="150" cy="250" r="8" fill="#7ED4E6"/>
-                        <circle cx="450" cy="250" r="8" fill="#7ED4E6"/>
-                        <circle cx="300" cy="350" r="8" fill="#4A90E2"/>
-                        
-                        <!-- Gradients -->
-                        <defs>
-                            <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:1" />
-                                <stop offset="100%" style="stop-color:#7ED4E6;stop-opacity:1" />
-                            </linearGradient>
-                            <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" style="stop-color:#7ED4E6;stop-opacity:1" />
-                                <stop offset="100%" style="stop-color:#B8E6FF;stop-opacity:1" />
-                            </linearGradient>
-                            <linearGradient id="gradient3" x1="0%" y1="0%" x2="100%" y2="100%">
-                                <stop offset="0%" style="stop-color:#B8E6FF;stop-opacity:1" />
-                                <stop offset="100%" style="stop-color:#E8F6FF;stop-opacity:1" />
-                            </linearGradient>
-                        </defs>
-                    </svg>
-                </div>
-            </div>
-        </section>
-        
-        <!-- About Section -->
-        <section class="section section-light" id="about">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-number">01</span>
-                    <h2 class="section-title">Comotopyについて</h2>
-                </div>
-                
-                <div class="about-content" style="max-width: 900px; margin: 0 auto;">
-                    <p class="text-large text-center">
-                        変革が多く答えのない現代社会において、私たちは<strong>経験と実績</strong>を基盤に、
-                        最先端のテクノロジーと創造的な思考で<strong>最適解</strong>をご提供します。
-                    </p>
-                    
-                    <p class="section-subtitle text-center mt-6">
-                        「こうしたい！」という想いを形にするため、<br>
-                        迅速かつ丁寧な対応で、持続的な成長を実現します。
-                    </p>
-                    
-                    <!-- Value Propositions -->
-                    <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--space-8); margin-top: var(--space-12);">
-                        <div class="text-center">
-                            <div class="service-icon mx-auto mb-4">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
-                                </svg>
-                            </div>
-                            <h3 class="font-bold text-lg mb-2">迅速な対応</h3>
-                            <p class="text-secondary">スピーディーな意思決定と実行で、ビジネスチャンスを逃しません</p>
-                        </div>
-                        
-                        <div class="text-center">
-                            <div class="service-icon mx-auto mb-4">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/>
-                                </svg>
-                            </div>
-                            <h3 class="font-bold text-lg mb-2">確かな実績</h3>
-                            <p class="text-secondary">多様な業界での成功事例と豊富な経験を活かします</p>
-                        </div>
-                        
-                        <div class="text-center">
-                            <div class="service-icon mx-auto mb-4">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <circle cx="12" cy="12" r="10"/>
-                                    <path d="M12 6v6l4 2"/>
-                                </svg>
-                            </div>
-                            <h3 class="font-bold text-lg mb-2">持続的成長</h3>
-                            <p class="text-secondary">短期的な成果だけでなく、長期的な成長戦略を提供します</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Services Section -->
-        <section class="section" id="services">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-number">02</span>
-                    <h2 class="section-title">サービス内容</h2>
-                    <p class="section-subtitle">
-                        デジタル時代に最適化された、包括的なビジネスソリューション
-                    </p>
-                </div>
-                
-                <div class="services-grid">
-                    <!-- Marketing Service Card -->
-                    <div class="service-card service-card-featured">
-                        <div class="service-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
-                                <line x1="9" y1="9" x2="15" y2="9"/>
-                                <line x1="9" y1="13" x2="15" y2="13"/>
-                                <line x1="9" y1="17" x2="13" y2="17"/>
-                            </svg>
-                        </div>
-                        <h3 class="service-title">マーケティング</h3>
-                        <p class="service-description">
-                            データドリブンなアプローチで、効果的なマーケティング戦略を構築します。
-                        </p>
-                        <ul class="service-features">
-                            <li>Webマーケティング戦略立案</li>
-                            <li>SNSマーケティング運用</li>
-                            <li>コンテンツマーケティング</li>
-                            <li>パフォーマンス分析・改善</li>
-                        </ul>
-                    </div>
-                    
-                    <!-- Consulting Service Card -->
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="12" cy="12" r="10"/>
-                                <path d="M12 16v-4"/>
-                                <path d="M12 8h.01"/>
-                            </svg>
-                        </div>
-                        <h3 class="service-title">コンサルティング</h3>
-                        <p class="service-description">
-                            専門知識と最新技術を活用し、ビジネス課題の解決をサポートします。
-                        </p>
-                        <ul class="service-features">
-                            <li>SEO最適化戦略</li>
-                            <li>SNS運用コンサルティング</li>
-                            <li>AI活用支援</li>
-                            <li>デジタルトランスフォーメーション</li>
-                        </ul>
-                    </div>
-                    
-                    <!-- Additional Service Card -->
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
-                            </svg>
-                        </div>
-                        <h3 class="service-title">分析・最適化</h3>
-                        <p class="service-description">
-                            詳細なデータ分析により、ビジネスの成長機会を発見し最適化します。
-                        </p>
-                        <ul class="service-features">
-                            <li>ウェブサイト分析</li>
-                            <li>ユーザー行動分析</li>
-                            <li>競合分析</li>
-                            <li>ROI最適化</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <!-- CTA Section -->
-                <div class="cta-section">
-                    <div class="cta-card">
-                        <h3>ビジネスの成長を加速させましょう</h3>
-                        <p>まずは無料相談から。お客様のニーズに合わせた最適なソリューションをご提案します。</p>
-                        <div class="flex gap-4 justify-center">
-                            <a href="#contact" class="btn btn-primary btn-lg">
-                                無料相談を申し込む
-                            </a>
-                            <a href="#" class="btn btn-secondary btn-lg">
-                                資料をダウンロード
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Contact Section -->
-        <section class="section section-light" id="contact">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-number">03</span>
-                    <h2 class="section-title">お問い合わせ</h2>
-                    <p class="section-subtitle">
-                        お気軽にご相談ください。24時間以内にご返信いたします。
-                    </p>
-                </div>
-                
-                <div style="max-width: 600px; margin: 0 auto;">
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <label for="name" class="form-label">お名前 *</label>
-                            <input type="text" id="name" name="name" class="form-input" required placeholder="山田 太郎">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email" class="form-label">メールアドレス *</label>
-                            <input type="email" id="email" name="email" class="form-input" required placeholder="example@email.com">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="company" class="form-label">会社名</label>
-                            <input type="text" id="company" name="company" class="form-input" placeholder="株式会社〇〇">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="service" class="form-label">ご興味のあるサービス</label>
-                            <select id="service" name="service" class="form-input">
-                                <option value="">選択してください</option>
-                                <option value="marketing">マーケティング</option>
-                                <option value="consulting">コンサルティング</option>
-                                <option value="analysis">分析・最適化</option>
-                                <option value="other">その他</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message" class="form-label">お問い合わせ内容 *</label>
-                            <textarea id="message" name="message" class="form-textarea" rows="5" required placeholder="ご相談内容をお聞かせください"></textarea>
-                        </div>
-                        
-                        <div class="text-center">
-                            <button type="submit" class="btn btn-primary btn-lg">
-                                送信する
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <line x1="22" y1="2" x2="11" y2="13"></line>
-                                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                                </svg>
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
-    
-    <!-- Footer -->
-    <footer class="footer bg-secondary" style="padding: var(--space-16) 0 var(--space-8) 0;">
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
         <div class="container">
-            <div class="text-center">
-                <div class="logo mb-6">
-                    <span class="logo-text" style="font-size: var(--text-3xl);">Comotopy</span>
-                </div>
-                <p class="text-secondary mb-8">
-                    お客様の「こうしたい！」を最適な技術で実現
+            <div class="hero-content">
+                <div class="hero-badge">🚀 イノベーションを加速</div>
+                <h1 class="hero-title">Comotopy</h1>
+                <div class="hero-subtitle">お客様の「こうしたい！」を最適な技術で実現</div>
+                <p class="hero-description">
+                    最先端のマーケティング戦略とコンサルティングサービスで、<br>
+                    あなたのビジネスを次のレベルへ導きます。
                 </p>
-                <div class="flex gap-6 justify-center mb-8">
-                    <a href="#" class="text-secondary hover:text-brand">プライバシーポリシー</a>
-                    <a href="#" class="text-secondary hover:text-brand">利用規約</a>
-                    <a href="#" class="text-secondary hover:text-brand">会社概要</a>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn btn-primary">
+                        サービスを見る →
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        無料相談を予約
+                    </a>
                 </div>
-                <p class="text-muted">
-                    © 2024 Comotopy. All rights reserved.
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section section-light" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">Comotopyについて</h2>
+            </div>
+            <div class="about-content">
+                <p class="about-text">
+                    変革が多く答えのない現代社会において、私たちは<strong>経験と実績</strong>を基盤に、<br>
+                    最先端のテクノロジーと創造的な思考で<strong>最適解</strong>をご提供します。
+                </p>
+                <p class="section-subtitle">
+                    「こうしたい！」という想いを形にするため、<br>
+                    迅速かつ丁寧な対応で、持続的な成長を実現します。
+                </p>
+                
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon">⚡</div>
+                        <h3 class="value-title">迅速な対応</h3>
+                        <p class="value-description">
+                            スピーディーな意思決定と実行で、ビジネスチャンスを逃しません
+                        </p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">🛡️</div>
+                        <h3 class="value-title">確かな実績</h3>
+                        <p class="value-description">
+                            多様な業界での成功事例と豊富な経験を活かします
+                        </p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon">📈</div>
+                        <h3 class="value-title">持続的成長</h3>
+                        <p class="value-description">
+                            短期的な成果だけでなく、長期的な成長戦略を提供します
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">サービス内容</h2>
+                <p class="section-subtitle">
+                    デジタル時代に最適化された、包括的なビジネスソリューション
                 </p>
             </div>
+            
+            <div class="services-grid">
+                <div class="service-card featured">
+                    <div class="service-icon">📊</div>
+                    <h3 class="service-title">マーケティング</h3>
+                    <p class="service-description">
+                        データドリブンなアプローチで、効果的なマーケティング戦略を構築します。
+                    </p>
+                    <ul class="service-list">
+                        <li>Webマーケティング戦略立案</li>
+                        <li>SNSマーケティング運用</li>
+                        <li>コンテンツマーケティング</li>
+                        <li>パフォーマンス分析・改善</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">💡</div>
+                    <h3 class="service-title">コンサルティング</h3>
+                    <p class="service-description">
+                        専門知識と最新技術を活用し、ビジネス課題の解決をサポートします。
+                    </p>
+                    <ul class="service-list">
+                        <li>SEO最適化戦略</li>
+                        <li>SNS運用コンサルティング</li>
+                        <li>AI活用支援</li>
+                        <li>デジタルトランスフォーメーション</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">📈</div>
+                    <h3 class="service-title">分析・最適化</h3>
+                    <p class="service-description">
+                        詳細なデータ分析により、ビジネスの成長機会を発見し最適化します。
+                    </p>
+                    <ul class="service-list">
+                        <li>ウェブサイト分析</li>
+                        <li>ユーザー行動分析</li>
+                        <li>競合分析</li>
+                        <li>ROI最適化</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="cta-section">
+                <div class="cta-card">
+                    <h3 class="cta-title">ビジネスの成長を加速させましょう</h3>
+                    <p class="cta-description">
+                        まずは無料相談から。お客様のニーズに合わせた最適なソリューションをご提案します。
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="#contact" class="btn-white">無料相談を申し込む</a>
+                        <a href="#" class="btn-outline-white">資料をダウンロード</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section-light" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">お問い合わせ</h2>
+                <p class="section-subtitle">
+                    お気軽にご相談ください。24時間以内にご返信いたします。
+                </p>
+            </div>
+            
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label class="form-label">お名前 *</label>
+                    <input type="text" class="form-input" required placeholder="山田 太郎">
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">メールアドレス *</label>
+                    <input type="email" class="form-input" required placeholder="example@email.com">
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">会社名</label>
+                    <input type="text" class="form-input" placeholder="株式会社〇〇">
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">ご興味のあるサービス</label>
+                    <select class="form-select">
+                        <option value="">選択してください</option>
+                        <option value="marketing">マーケティング</option>
+                        <option value="consulting">コンサルティング</option>
+                        <option value="analysis">分析・最適化</option>
+                        <option value="other">その他</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">お問い合わせ内容 *</label>
+                    <textarea class="form-textarea" required placeholder="ご相談内容をお聞かせください"></textarea>
+                </div>
+                
+                <button type="submit" class="form-submit">送信する</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">Comotopy</div>
+            <p class="footer-description">
+                お客様の「こうしたい！」を最適な技術で実現
+            </p>
+            <div class="footer-links">
+                <a href="#" class="footer-link">プライバシーポリシー</a>
+                <a href="#" class="footer-link">利用規約</a>
+                <a href="#" class="footer-link">会社概要</a>
+            </div>
+            <p class="footer-copyright">
+                © 2024 Comotopy. All rights reserved.
+            </p>
         </div>
     </footer>
-    
-    <!-- JavaScript -->
+
     <script>
-        // Mobile Menu Toggle
-        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
-        const navMenu = document.getElementById('navMenu');
-        
-        mobileMenuToggle.addEventListener('click', () => {
-            mobileMenuToggle.classList.toggle('active');
-            navMenu.classList.toggle('active');
-            const isExpanded = mobileMenuToggle.classList.contains('active');
-            mobileMenuToggle.setAttribute('aria-expanded', isExpanded);
-        });
-        
-        // Header Scroll Effect
-        const header = document.getElementById('header');
-        const headerProgress = document.getElementById('headerProgress');
-        
+        // Header scroll effect
         window.addEventListener('scroll', () => {
-            const scrolled = window.scrollY > 50;
-            header.classList.toggle('scrolled', scrolled);
-            
-            // Progress Bar
-            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            const scrolled_percentage = (winScroll / height) * 100;
-            headerProgress.style.width = scrolled_percentage + '%';
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
         });
-        
-        // Smooth Scroll for Navigation Links
+
+        // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
-                    const headerOffset = 80;
-                    const elementPosition = target.getBoundingClientRect().top;
-                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-                    
-                    window.scrollTo({
-                        top: offsetPosition,
-                        behavior: 'smooth'
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
                     });
-                    
-                    // Close mobile menu if open
-                    mobileMenuToggle.classList.remove('active');
-                    navMenu.classList.remove('active');
                 }
             });
         });
-        
-        // Active Navigation Link
-        const sections = document.querySelectorAll('section[id]');
-        const navLinks = document.querySelectorAll('.nav-link');
-        
-        window.addEventListener('scroll', () => {
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (scrollY >= (sectionTop - 200)) {
-                    current = section.getAttribute('id');
-                }
-            });
-            
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href').slice(1) === current) {
-                    link.classList.add('active');
-                }
-            });
-        });
-        
-        // Form Submission
-        const contactForm = document.getElementById('contactForm');
-        contactForm.addEventListener('submit', (e) => {
+
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', (e) => {
             e.preventDefault();
-            // ここに実際の送信処理を追加
             alert('お問い合わせありがとうございます。24時間以内にご返信いたします。');
-            contactForm.reset();
-        });
-        
-        // Intersection Observer for Animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-        
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('animate-fadeInUp');
-                }
-            });
-        }, observerOptions);
-        
-        document.querySelectorAll('.service-card, .section-header').forEach(el => {
-            observer.observe(el);
+            e.target.reset();
         });
     </script>
 </body>
