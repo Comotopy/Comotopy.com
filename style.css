@@ -1,32 +1,29 @@
 /* ========================================
-   CLEAN & MODERN DESIGN SYSTEM
-   Based on benchmark tonality
+   WHITE-BASED DESIGN WITH MEGA COMOTOPY BRANDING
 ======================================== */
 :root {
-    /* Clean Color Palette - Benchmark Inspired */
-    --color-primary: #4A90E2;
-    --color-primary-light: #7ED4E6;
-    --color-accent: #5BC0DE;
-    --color-success: #5CB85C;
+    /* Pure White Base Palette */
+    --color-primary: #ffffff;
+    --color-secondary: #f8fafb;
+    --color-tertiary: #f1f5f9;
     
-    /* Background Colors */
-    --color-bg-primary: #ffffff;
-    --color-bg-secondary: #f8fafb;
-    --color-bg-tertiary: #f1f5f9;
-    --color-bg-light: #fcfdfe;
+    /* Accent Colors - Light Blue Family */
+    --color-accent-primary: #4A90E2;
+    --color-accent-secondary: #7ED4E6;
+    --color-accent-light: #B8E6FF;
+    --color-accent-ultra-light: #E8F6FF;
     
     /* Text Colors */
-    --color-text-primary: #2c3e50;
-    --color-text-secondary: #5a6c7d;
-    --color-text-muted: #8892a0;
-    --color-text-light: #a8b2bd;
+    --color-text-primary: #1a1a1a;
+    --color-text-secondary: #4a4a4a;
+    --color-text-muted: #888888;
     
-    /* Border & Shadow */
-    --color-border: #e8ecef;
-    --color-border-light: #f1f3f5;
-    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.04);
+    /* Shadows & Effects */
+    --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.06);
     --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
     --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+    --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.16);
     
     /* Typography */
     --font-primary: 'Inter', 'Noto Sans JP', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -39,12 +36,14 @@
     --space-xl: 3rem;
     --space-2xl: 4rem;
     --space-3xl: 6rem;
+    --space-4xl: 8rem;
     
     /* Border Radius */
-    --radius-sm: 6px;
+    --radius-sm: 8px;
     --radius-md: 12px;
     --radius-lg: 16px;
     --radius-xl: 24px;
+    --radius-2xl: 32px;
     
     /* Transitions */
     --transition-fast: 0.15s ease;
@@ -75,7 +74,7 @@ body {
     font-size: 16px;
     line-height: 1.6;
     color: var(--color-text-primary);
-    background-color: var(--color-bg-primary);
+    background-color: var(--color-primary);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -87,7 +86,7 @@ body {
 }
 
 /* ========================================
-   HEADER - Clean & Professional
+   HEADER - Ultra Clean White
 ======================================== */
 .header {
     position: fixed;
@@ -95,16 +94,17 @@ body {
     left: 0;
     right: 0;
     z-index: 1000;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--color-border);
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     height: var(--header-height);
     transition: var(--transition-smooth);
 }
 
 .header.scrolled {
-    background: rgba(255, 255, 255, 0.98);
+    background: rgba(255, 255, 255, 0.99);
     box-shadow: var(--shadow-md);
+    border-bottom-color: rgba(0, 0, 0, 0.08);
 }
 
 .header .container {
@@ -118,23 +118,25 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 2px;
-    background: linear-gradient(90deg, var(--color-primary), var(--color-primary-light));
+    height: 3px;
+    background: linear-gradient(90deg, var(--color-accent-primary), var(--color-accent-secondary));
     transition: width 0.1s ease;
     width: 0%;
+    box-shadow: 0 2px 8px rgba(74, 144, 226, 0.3);
 }
 
-/* Logo - Clean Typography */
+/* Logo - Comotopy Brand Focus */
 .logo-text {
-    font-size: 1.75rem;
-    font-weight: 700;
+    font-size: 2rem;
+    font-weight: 800;
     text-decoration: none;
-    color: var(--color-primary);
+    color: var(--color-accent-primary);
     letter-spacing: -0.02em;
     transition: var(--transition-normal);
 }
 
 .logo-text:hover {
+    transform: scale(1.05);
     color: var(--color-text-primary);
 }
 
@@ -153,22 +155,23 @@ body {
     font-size: 0.95rem;
     position: relative;
     transition: var(--transition-normal);
+    padding: var(--space-xs) 0;
 }
 
 .nav-link::after {
     content: '';
     position: absolute;
-    bottom: -4px;
+    bottom: -2px;
     left: 0;
     width: 0;
     height: 2px;
-    background: var(--color-primary);
+    background: var(--color-accent-primary);
     transition: width var(--transition-normal);
 }
 
 .nav-link:hover,
 .nav-active {
-    color: var(--color-primary);
+    color: var(--color-accent-primary);
 }
 
 .nav-link:hover::after,
@@ -177,9 +180,9 @@ body {
 }
 
 .nav-cta {
-    background: var(--color-primary) !important;
+    background: var(--color-accent-primary) !important;
     color: white !important;
-    padding: var(--space-xs) var(--space-md);
+    padding: var(--space-xs) var(--space-md) !important;
     border-radius: var(--radius-sm);
     font-weight: 600;
     box-shadow: var(--shadow-sm);
@@ -196,7 +199,7 @@ body {
     box-shadow: var(--shadow-md);
 }
 
-/* Hamburger - Clean Lines */
+/* Hamburger */
 .hamburger {
     display: none;
     flex-direction: column;
@@ -228,15 +231,16 @@ body {
 }
 
 /* ========================================
-   HERO SECTION - Clean & Impactful
+   HERO SECTION - MEGA COMOTOPY BRANDING
 ======================================== */
 .hero {
     min-height: 100vh;
     display: flex;
     align-items: center;
     position: relative;
-    background: linear-gradient(135deg, #f8fafb 0%, #ffffff 100%);
+    background: var(--color-primary);
     padding-top: var(--header-height);
+    overflow: hidden;
 }
 
 .hero-contact {
@@ -258,8 +262,10 @@ body {
 .hero .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: var(--space-3xl);
+    gap: var(--space-4xl);
     align-items: center;
+    position: relative;
+    z-index: 2;
 }
 
 .hero-contact .container {
@@ -272,7 +278,7 @@ body {
     align-items: center;
     padding: var(--space-xs) var(--space-md);
     background: rgba(74, 144, 226, 0.1);
-    color: var(--color-primary);
+    color: var(--color-accent-primary);
     border: 1px solid rgba(74, 144, 226, 0.2);
     border-radius: var(--radius-xl);
     font-size: 0.85rem;
@@ -280,31 +286,41 @@ body {
     margin-bottom: var(--space-lg);
 }
 
-.badge-text {
-    position: relative;
-    z-index: 2;
-}
-
 /* ========================================
-   HERO BRAND LOGO - Clean & Bold
+   MEGA COMOTOPY BRAND DISPLAY
 ======================================== */
-.hero-brand-display {
-    margin-bottom: var(--space-lg);
+.hero-brand-mega {
     text-align: center;
+    margin-bottom: var(--space-2xl);
+    position: relative;
 }
 
-.brand-name {
-    font-size: clamp(3.5rem, 8vw, 6rem);
-    font-weight: 800;
-    color: var(--color-primary);
+.mega-brand-name {
+    font-size: clamp(4rem, 12vw, 8rem);
+    font-weight: 900;
+    color: var(--color-text-primary);
     margin-bottom: 0;
-    letter-spacing: -0.03em;
-    line-height: 1.1;
-    text-shadow: 0 4px 20px rgba(74, 144, 226, 0.2);
+    letter-spacing: -0.04em;
+    line-height: 0.9;
+    text-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.mega-brand-name::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(ellipse, rgba(74, 144, 226, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    z-index: -1;
 }
 
 .hero-title {
-    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-size: clamp(1.5rem, 4vw, 2.25rem);
     font-weight: 700;
     line-height: 1.3;
     margin-bottom: var(--space-lg);
@@ -317,7 +333,7 @@ body {
 }
 
 .title-highlight {
-    color: var(--color-primary);
+    color: var(--color-accent-primary);
 }
 
 .hero-description {
@@ -326,6 +342,10 @@ body {
     margin-bottom: var(--space-xl);
     line-height: 1.7;
     text-align: center;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: var(--space-xl);
 }
 
 .hero-actions {
@@ -335,18 +355,20 @@ body {
     justify-content: center;
 }
 
-/* Hero Visual - Simple SVG */
+/* Hero Visual - Clean Illustration */
 .hero-visual {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 2;
 }
 
 .hero-illustration svg {
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
     height: auto;
-    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.1));
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.08));
 }
 
 /* ========================================
@@ -360,34 +382,54 @@ body {
     border-radius: var(--radius-md);
     text-decoration: none;
     font-weight: 600;
-    font-size: 0.95rem;
+    font-size: 1rem;
     transition: var(--transition-smooth);
     border: none;
     cursor: pointer;
     white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left var(--transition-smooth);
+}
+
+.btn:hover::before {
+    left: 100%;
 }
 
 .btn-primary {
-    background: var(--color-primary);
+    background: var(--color-accent-primary);
     color: white;
-    box-shadow: var(--shadow-sm);
+    box-shadow: var(--shadow-md);
 }
 
 .btn-primary:hover {
     background: #3a7bc8;
-    transform: translateY(-1px);
-    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
 }
 
 .btn-secondary {
-    background: transparent;
-    color: var(--color-primary);
-    border: 1px solid var(--color-border);
+    background: var(--color-primary);
+    color: var(--color-accent-primary);
+    border: 2px solid var(--color-accent-light);
+    box-shadow: var(--shadow-sm);
 }
 
 .btn-secondary:hover {
-    background: var(--color-bg-secondary);
-    border-color: var(--color-primary);
+    background: var(--color-accent-ultra-light);
+    border-color: var(--color-accent-primary);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
 }
 
 .btn-icon {
@@ -395,461 +437,31 @@ body {
 }
 
 .btn:hover .btn-icon {
-    transform: translateX(2px);
+    transform: translateX(3px);
 }
 
 /* ========================================
    SECTIONS - Clean Layout
 ======================================== */
 .section {
-    padding: var(--space-3xl) 0;
+    padding: var(--space-4xl) 0;
 }
 
 .section-light {
-    background: var(--color-bg-secondary);
+    background: var(--color-secondary);
 }
 
 .section-header {
     text-align: center;
     margin-bottom: var(--space-3xl);
-    max-width: 600px;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .section-number {
     font-size: 0.875rem;
-    color: var(--color-primary);
-    font-weight: 600;
+    color: var(--color-accent-primary);
+    font-weight: 700;
     margin-bottom: var(--space-xs);
-    display: block;
-}
-
-.section-title {
-    font-size: clamp(2rem, 4vw, 2.75rem);
-    font-weight: 700;
-    margin-bottom: var(--space-md);
-    color: var(--color-text-primary);
-    letter-spacing: -0.02em;
-}
-
-.section-subtitle {
-    font-size: 1.125rem;
-    color: var(--color-text-secondary);
-    line-height: 1.6;
-}
-
-/* ========================================
-   ABOUT SECTION - Simplified
-======================================== */
-.about-simple {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.about-text-center {
-    text-align: center;
-}
-
-.text-large {
-    font-size: 1.25rem;
-    line-height: 1.7;
-    margin-bottom: var(--space-lg);
-    color: var(--color-text-secondary);
-}
-
-.text-large strong {
-    color: var(--color-primary);
-    font-weight: 600;
-}
-
-.about-description {
-    font-size: 1.125rem;
-    color: var(--color-text-secondary);
-    line-height: 1.7;
-}
-
-/* ========================================
-   SERVICES SECTION - Card Grid
-======================================== */
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: var(--space-xl);
-    margin-bottom: var(--space-3xl);
-}
-
-.service-card {
-    background: var(--color-bg-primary);
-    padding: var(--space-xl);
-    border-radius: var(--radius-lg);
-    border: 1px solid var(--color-border);
-    transition: var(--transition-smooth);
-    position: relative;
-}
-
-.service-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-lg);
-    border-color: var(--color-primary);
-}
-
-.service-featured {
-    background: linear-gradient(135deg, rgba(74, 144, 226, 0.05) 0%, rgba(126, 212, 230, 0.05) 100%);
-    border-color: var(--color-primary);
-    position: relative;
-}
-
-.service-featured::before {
-    content: 'POPULAR';
-    position: absolute;
-    top: -1px;
-    right: var(--space-lg);
-    background: var(--color-primary);
-    color: white;
-    padding: var(--space-xs) var(--space-md);
-    border-radius: 0 0 var(--radius-sm) var(--radius-sm);
-    font-size: 0.75rem;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-}
-
-.service-header {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin-bottom: var(--space-lg);
-}
-
-.service-info {
-    display: flex;
-    align-items: center;
-    gap: var(--space-md);
-}
-
-.service-icon {
-    font-size: 1.5rem;
-}
-
-.service-card h3 {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: var(--color-text-primary);
-}
-
-.service-badge {
-    background: var(--color-primary-light);
-    color: white;
-    padding: 0.25rem var(--space-xs);
-    border-radius: var(--radius-sm);
-    font-size: 0.75rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-.service-list {
-    list-style: none;
-    margin-bottom: var(--space-lg);
-}
-
-.service-list li {
-    padding: var(--space-xs) 0;
-    color: var(--color-text-secondary);
-    position: relative;
-    padding-left: var(--space-md);
-}
-
-.service-list li::before {
-    content: '•';
-    position: absolute;
-    left: 0;
-    color: var(--color-primary);
-    font-weight: bold;
-}
-
-.service-description {
-    color: var(--color-text-secondary);
-    line-height: 1.6;
-}
-
-/* CTA Section */
-.cta-section {
-    text-align: center;
-}
-
-.cta-card {
-    background: var(--color-bg-primary);
-    padding: var(--space-3xl);
-    border-radius: var(--radius-xl);
-    border: 1px solid var(--color-border);
-    max-width: 600px;
-    margin: 0 auto;
-    box-shadow: var(--shadow-md);
-}
-
-.cta-card h3 {
-    font-size: 1.75rem;
-    font-weight: 700;
-    margin-bottom: var(--space-md);
-    color: var(--color-text-primary);
-}
-
-.cta-card p {
-    color: var(--color-text-secondary);
-    margin-bottom: var(--space-xl);
-    font-size: 1.125rem;
-    line-height: 1.6;
-}
-
-/* ========================================
-   CONTACT SECTION - Clean & Simple
-======================================== */
-.contact-section {
-    padding: var(--space-3xl) 0;
-}
-
-.contact-simple {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.contact-center {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-xl);
-}
-
-.contact-method {
-    background: var(--color-bg-primary);
-    padding: var(--space-xl);
-    border-radius: var(--radius-lg);
-    border: 1px solid var(--color-border);
-    display: flex;
-    gap: var(--space-lg);
-    transition: var(--transition-smooth);
-    box-shadow: var(--shadow-sm);
-}
-
-.contact-method:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-md);
-    border-color: var(--color-primary);
-}
-
-.contact-icon {
-    font-size: 1.5rem;
-    flex-shrink: 0;
-    margin-top: var(--space-xs);
-}
-
-.contact-details h3 {
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-bottom: var(--space-md);
-    color: var(--color-text-primary);
-}
-
-.email-link {
-    color: var(--color-primary);
-    text-decoration: none;
-    font-size: 1.125rem;
-    font-weight: 600;
-    transition: var(--transition-normal);
-}
-
-.email-link:hover {
-    color: #3a7bc8;
-}
-
-.contact-note {
-    font-size: 0.875rem;
-    color: var(--color-text-muted);
-    margin-top: var(--space-xs);
-}
-
-.response-guarantee {
-    background: linear-gradient(135deg, var(--color-success) 0%, #4a9f4a 100%);
-    padding: var(--space-lg);
-    border-radius: var(--radius-lg);
-    display: flex;
-    align-items: center;
-    gap: var(--space-md);
-    color: white;
-    box-shadow: var(--shadow-sm);
-}
-
-.guarantee-icon {
-    font-size: 1.25rem;
-    flex-shrink: 0;
-}
-
-.guarantee-content h3 {
-    font-size: 1.125rem;
-    font-weight: 600;
-    margin-bottom: 0.25rem;
-}
-
-.guarantee-content p {
-    font-size: 0.875rem;
-    opacity: 0.9;
-}
-
-/* ========================================
-   FOOTER - Clean & Professional
-======================================== */
-.footer {
-    background: var(--color-bg-tertiary);
-    padding: var(--space-3xl) 0 var(--space-lg);
-    border-top: 1px solid var(--color-border);
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: var(--space-lg);
-    padding-bottom: var(--space-lg);
-    border-bottom: 1px solid var(--color-border);
-}
-
-.footer-logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--color-primary);
-    margin-bottom: var(--space-xs);
-}
-
-.footer-tagline {
-    color: var(--color-text-secondary);
-    font-size: 0.875rem;
-}
-
-.footer-link {
-    color: var(--color-primary);
-    text-decoration: none;
-    font-weight: 500;
-    transition: var(--transition-normal);
-}
-
-.footer-link:hover {
-    color: #3a7bc8;
-}
-
-.footer-bottom {
-    text-align: center;
-    color: var(--color-text-muted);
-    font-size: 0.875rem;
-}
-
-/* ========================================
-   RESPONSIVE DESIGN
-======================================== */
-@media (max-width: 1024px) {
-    .hero .container {
-        grid-template-columns: 1fr;
-        gap: var(--space-xl);
-        text-align: center;
-    }
-    
-    .hero-visual {
-        max-width: 500px;
-        margin: 0 auto;
-    }
-}
-
-@media (max-width: 768px) {
-    .container {
-        padding: 0 var(--space-md);
-    }
-    
-    .hamburger {
-        display: flex;
-    }
-    
-    .nav-menu {
-        display: none;
-        position: absolute;
-        top: calc(100% + var(--space-sm));
-        right: var(--space-md);
-        background: var(--color-bg-primary);
-        border: 1px solid var(--color-border);
-        border-radius: var(--radius-lg);
-        padding: var(--space-lg);
-        flex-direction: column;
-        gap: var(--space-md);
-        min-width: 200px;
-        box-shadow: var(--shadow-lg);
-    }
-    
-    .nav-menu.active {
-        display: flex;
-    }
-    
-    .hero-actions {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .btn {
-        width: 100%;
-        max-width: 280px;
-        justify-content: center;
-    }
-    
-    .services-grid {
-        grid-template-columns: 1fr;
-        gap: var(--space-lg);
-    }
-    
-    .footer-content {
-        flex-direction: column;
-        gap: var(--space-md);
-        text-align: center;
-    }
-    
-    .hero-visual {
-        display: none;
-    }
-}
-
-@media (max-width: 640px) {
-    .section {
-        padding: var(--space-2xl) 0;
-    }
-    
-    .section-header {
-        margin-bottom: var(--space-xl);
-    }
-    
-    .service-card,
-    .contact-method,
-    .cta-card {
-        padding: var(--space-lg);
-    }
-    
-    .brand-name {
-        font-size: clamp(2.5rem, 10vw, 4rem);
-    }
-}
-
-/* ========================================
-   ACCESSIBILITY & PERFORMANCE
-======================================== */
-@media (prefers-reduced-motion: reduce) {
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-    }
-}
-
-/* Focus styles for accessibility */
-.btn:focus,
-.nav-link:focus,
-.email-link:focus {
-    outline: 2px solid var(--color-primary);
-    outline-offset: 2px;
-}
+    display: block<span class="cursor">█</span>
