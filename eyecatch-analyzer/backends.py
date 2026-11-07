@@ -11,7 +11,7 @@ SCHEMA_PROMPT = """これは求人広告のアイキャッチ画像です。次�
  "person_framing": ["face_closeup"|"upper_body"|"full_body"|"circle_cutout", ...],
  "person_expression": ["smile"|"neutral"|"serious", ...],
  "person_gaze": ["camera"|"away", ...],
- "elements": ["photo_cutout"|"photo_frame"|"icon"|"illustration_person"|"chart"|"logo"|"badge"|"speech_bubble"|"underlay_band"|"checklist"|"decoration_effect", ...],
+ "elements": ["photo_cutout"|"photo_frame"|"icon"|"illustration_person"|"illustration_vehicle"|"chart"|"logo"|"badge"|"speech_bubble"|"underlay_band"|"checklist"|"decoration_effect", ...],
  "layout_pattern": "text_left_person_right"|"text_top_object_below"|"center_object_radial"|"photo_left_text_right"|"full_photo_overlay"|"other",
  "text_emphasis": ["number_highlight"|"outline_stroke"|"underlay_band"|"checklist"|"color_split_headline"|"speech_bubble", ...],
  "appeals": ["salary"|"no_experience"|"short_hours"|"bonus"|"athome"|"flexible_shift"|"license_only"|"vehicle_support"|"side_job"|"no_fee"|"direct_commute"|"other", ...],
