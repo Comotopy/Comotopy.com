@@ -27,6 +27,12 @@
 | 印象 | `tone` | trust, friendly, pop, impact, serious, clean |
 | 数値 | 色・明度・彩度・縦横比・文字面積比 | 画像処理で算出(文字面積比のみ概算) |
 
+## 改訂(実画像11枚の確認後)
+- `purpose`(画像の目的)を追加: direct_recruit(応募を直接促す) / explainer(仕事内容・制度の解説) / caution(注意喚起)。11枚中3枚が求人ではなく解説・注意喚起だった。
+- `appeals` に employment_type(業務委託・雇用形態) / stable_income(安定・保証) / rewarding(やりがい・地域密着) を追加。11枚で `other` が82%を占めたため。
+- `layout_pattern` に object_top_text_bottom を追加。
+- 色は主要色(最頻色)より強調色(accent_colors)を主に使う。写真の背景に最頻色が引っ張られるため。
+
 ## 未解決
 - 語彙は6枚から作ったもの。枚数が増えたら頻出する `other` を昇格させ、使われない語彙を削る。
 - `tone` は主観を含む。判定者(人/AI)による揺れを、同じ画像を複数回判定して測る必要がある。

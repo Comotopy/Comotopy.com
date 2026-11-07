@@ -14,7 +14,8 @@ SCHEMA_PROMPT = """これは求人広告のアイキャッチ画像です。次�
  "elements": ["photo_cutout"|"photo_frame"|"icon"|"illustration_person"|"illustration_vehicle"|"chart"|"logo"|"badge"|"speech_bubble"|"underlay_band"|"checklist"|"decoration_effect", ...],
  "layout_pattern": "text_left_person_right"|"text_top_object_below"|"center_object_radial"|"photo_left_text_right"|"object_top_text_bottom"|"full_photo_overlay"|"other",
  "text_emphasis": ["number_highlight"|"outline_stroke"|"underlay_band"|"checklist"|"color_split_headline"|"speech_bubble", ...],
- "appeals": ["salary"|"no_experience"|"short_hours"|"bonus"|"athome"|"flexible_shift"|"license_only"|"vehicle_support"|"side_job"|"no_fee"|"direct_commute"|"other", ...],
+ "appeals": ["salary"|"no_experience"|"short_hours"|"bonus"|"athome"|"flexible_shift"|"license_only"|"vehicle_support"|"side_job"|"no_fee"|"direct_commute"|"employment_type"(業務委託/正社員等の雇用形態)|"stable_income"(安定収入・保証)|"rewarding"(やりがい・地域密着)|"other", ...],
+ "purpose": "direct_recruit"(応募を直接促す求人)|"explainer"(仕事内容・制度の解説)|"caution"(注意喚起),
  "tone": ["trust"|"friendly"|"pop"|"impact"|"serious"|"clean", ...],
  "text_area_ratio": 0〜1(テキストが占める画像面積の概算),
  "main_text": "最も目立つ文言"}"""

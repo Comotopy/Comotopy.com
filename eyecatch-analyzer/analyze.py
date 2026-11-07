@@ -49,6 +49,7 @@ def write_report(rows, path, backend):
 - 推定性別(のべ人数): 男性的 {g['male']} / 女性的 {g['female']} / 不明 {g['unknown']}
 - イラスト人物あり: {pct(sum(1 for r in rows if r.get('illustration_people_count')), t)}(実写人物とは別集計)
 {section(rows, '実写人物の写り方', 'person_framing')}{section(rows, '表情', 'person_expression')}{section(rows, '視線', 'person_gaze')}
+{section(rows, '画像の目的', 'purpose', False)}
 ## 画像タイプ
 | 種別 | 割合 |
 |---|---|
