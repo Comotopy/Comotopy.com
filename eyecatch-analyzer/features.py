@@ -43,6 +43,6 @@ def color_features(path):
             "dominant_color": name, "dominant_hex": "#%02x%02x%02x" % (int(r*255), int(g*255), int(b*255)),
             "dominant_share": round(float(cnt.max() / cnt.sum()), 2),
             "accent_colors": accent_list, "navy_share": round(navy, 2),
-            "tone": "warm" if warm else ("cool" if name in ("green", "blue", "purple") else "neutral"),
+            "color_temp": "warm" if warm else ("cool" if name in ("green", "blue", "purple") else "neutral"),
             "brightness": round(float(lum.mean()), 2), "contrast": round(float(lum.std()), 2),
             "saturation": round(float(sat.mean()), 2)}

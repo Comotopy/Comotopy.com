@@ -16,9 +16,10 @@ def main():
         rows.append({"file": p.name, **features.color_features(p), **sem})
     out = Path(a.out); out.mkdir(exist_ok=True)
     (out / "features.json").write_text(json.dumps(rows, ensure_ascii=False, indent=1))
-    flat = [{**r, "genders": "|".join(r["genders"]), "appeals": "|".join(r["appeals"])} for r in rows]
+    flat = [{k: ("|".join(v) if isinstance(v, list) else v) for k, v in r.items()} for r in rows]
+    cols = list(dict.fromkeys(k for r in flat for k in r))
     with open(out / "features.csv", "w", newline="", encoding="utf-8-sig") as f:
-        w = csv.DictWriter(f, fieldnames=flat[0].keys()); w.writeheader(); w.writerows(flat)
+        w = csv.DictWriter(f, fieldnames=cols, restval=''); w.writeheader(); w.writerows(flat)
     write_report(rows, out / "report.md", a.backend)
     print(f"{len(rows)} images analyzed -> {out}/ (features.csv, report.md)")
 
@@ -26,8 +27,12 @@ def pct(n, t): return f"{n}件 ({n/t:.0%})"
 
 def dist(rows, key, many=False):
     t = len(rows)
-    c = Counter(v for r in rows for v in (r[key] if many else [r[key]]))
-    return "\n".join(f"| {k} | {pct(v, t)} |" for k, v in c.most_common())
+    c = Counter(v for r in rows for v in ((r.get(key) or []) if many else [r.get(key)]) if v)
+    return "\n".join(f"| {k} | {pct(v, t)} |" for k, v in c.most_common()) or "| (データなし) | - |"
+
+def section(rows, title, key, many=True):
+    if not any(r.get(key) for r in rows): return ""
+    return f"\n## {title}\n| 項目 | 出現率 |\n|---|---|\n{dist(rows, key, many)}\n"
 
 def write_report(rows, path, backend):
     t = len(rows); ppl = [r["people_count"] for r in rows]
@@ -42,7 +47,8 @@ def write_report(rows, path, backend):
 - 平均人数(人物ありのみ): {sum(ppl)/max(with_p,1):.2f}人
 - 人数分布: {dict(sorted(Counter(ppl).items()))}
 - 推定性別(のべ人数): 男性的 {g['male']} / 女性的 {g['female']} / 不明 {g['unknown']}
-
+- イラスト人物あり: {pct(sum(1 for r in rows if r.get('illustration_people_count')), t)}(実写人物とは別集計)
+{section(rows, '実写人物の写り方', 'person_framing')}{section(rows, '表情', 'person_expression')}{section(rows, '視線', 'person_gaze')}
 ## 画像タイプ
 | 種別 | 割合 |
 |---|---|
@@ -53,14 +59,15 @@ def write_report(rows, path, backend):
 |---|---|
 {dist(rows, 'appeals', True)}
 
+{section(rows, '写真の被写体', 'photo_subject')}{section(rows, '構成要素', 'elements')}{section(rows, 'レイアウト型', 'layout_pattern', False)}{section(rows, '文字の強調手法', 'text_emphasis')}{section(rows, 'トーン', 'tone')}
 ## 色
 | 主要色 | 割合 |
 |---|---|
 {dist(rows, 'dominant_color')}
 
-| トーン | 割合 |
+| 色温度 | 割合 |
 |---|---|
-{dist(rows, 'tone')}
+{dist(rows, 'color_temp')}
 
 - 平均明度 {avg('brightness'):.2f} / 平均コントラスト {avg('contrast'):.2f} / 平均彩度 {avg('saturation'):.2f}
 - 平均テキスト面積比(概算): {avg('text_area_ratio'):.0%}

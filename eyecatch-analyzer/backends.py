@@ -2,11 +2,20 @@
 import base64, json, os
 from pathlib import Path
 
-SCHEMA_PROMPT = """これは求人広告のアイキャッチ画像です。次のJSONのみを返してください(説明文は不要)。
-{"people_count": 整数(見える人物の数),
- "genders": ["male"|"female"|"unknown", ...]  /* 見た目からの推定 */,
- "image_style": "photo_like"|"illustration"|"text_only"|"composite"(写真+図解/アイコン/吹き出し等の合成),
+SCHEMA_PROMPT = """これは求人広告のアイキャッチ画像です。次のJSONのみを返してください(説明文は不要)。値は指定の語彙から選ぶこと。
+{"people_count": 整数(実写の人物のみ。イラスト・アイコンは含めない),
+ "genders": ["male"|"female"|"unknown", ...]  /* 実写人物の見た目からの推定 */,
+ "illustration_people_count": 整数(イラスト・アイコン・キャラクターの人物数),
+ "image_style": "photo_dominant"|"illustration_dominant"|"graphic_dominant"|"mixed",
+ "photo_subject": ["person"|"vehicle"|"workplace"|"product"|"scenery", ...],
+ "person_framing": ["face_closeup"|"upper_body"|"full_body"|"circle_cutout", ...],
+ "person_expression": ["smile"|"neutral"|"serious", ...],
+ "person_gaze": ["camera"|"away", ...],
+ "elements": ["photo_cutout"|"photo_frame"|"icon"|"illustration_person"|"chart"|"logo"|"badge"|"speech_bubble"|"underlay_band"|"checklist"|"decoration_effect", ...],
+ "layout_pattern": "text_left_person_right"|"text_top_object_below"|"center_object_radial"|"photo_left_text_right"|"full_photo_overlay"|"other",
+ "text_emphasis": ["number_highlight"|"outline_stroke"|"underlay_band"|"checklist"|"color_split_headline"|"speech_bubble", ...],
  "appeals": ["salary"|"no_experience"|"short_hours"|"bonus"|"athome"|"flexible_shift"|"license_only"|"vehicle_support"|"side_job"|"no_fee"|"direct_commute"|"other", ...],
+ "tone": ["trust"|"friendly"|"pop"|"impact"|"serious"|"clean", ...],
  "text_area_ratio": 0〜1(テキストが占める画像面積の概算),
  "main_text": "最も目立つ文言"}"""
 
