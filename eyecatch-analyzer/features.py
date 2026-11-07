@@ -24,10 +24,25 @@ def color_features(path):
     hh, ss, vv = colorsys.rgb_to_hsv(r, g, b)
     if ss < 0.15: name = "white" if vv > 0.7 else ("black" if vv < 0.25 else "gray")
     else: name = hue_name(hh * 360)
+    # 強調色: 彩度・明度が十分ある画素だけで色相ヒストグラム(背景の白/グレー/写真の肌色割れを避ける)
+    hue = np.zeros_like(mx)
+    d = np.maximum(mx - mn, 1e-6)
+    r_, g_, b_ = a[..., 0], a[..., 1], a[..., 2]
+    hue = np.where(mx == r_, ((g_ - b_) / d) % 6, np.where(mx == g_, (b_ - r_) / d + 2, (r_ - g_) / d + 4)) * 60
+    m = (sat > 0.4) & (mx > 0.25)
+    accents = {}
+    if m.sum():
+        for hv in hue[m]:
+            n_ = hue_name(float(hv)); accents[n_] = accents.get(n_, 0) + 1
+        # 暗い紺は「blue」だが低明度なので別名にする
+    navy = float(((mx < 0.45) & (sat > 0.4) & (hue > 200) & (hue < 260)).mean())
+    top_acc = sorted(accents.items(), key=lambda kv: -kv[1])[:2]
+    accent_list = [f"{k}:{v/a[...,0].size:.0%}" for k, v in top_acc]
     warm = name in ("red", "orange", "yellow")
     return {"width": w, "height": h, "aspect_ratio": round(w / h, 2),
             "dominant_color": name, "dominant_hex": "#%02x%02x%02x" % (int(r*255), int(g*255), int(b*255)),
             "dominant_share": round(float(cnt.max() / cnt.sum()), 2),
+            "accent_colors": accent_list, "navy_share": round(navy, 2),
             "tone": "warm" if warm else ("cool" if name in ("green", "blue", "purple") else "neutral"),
             "brightness": round(float(lum.mean()), 2), "contrast": round(float(lum.std()), 2),
             "saturation": round(float(sat.mean()), 2)}
