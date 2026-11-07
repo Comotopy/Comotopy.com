@@ -1,0 +1,18 @@
+{
+ "source": "job_007.jpg", "version": 2, "canvas": {"w": 450, "h": 300, "note": "座標は2倍(900x600)で記載"},
+ "analysis": {"people_count":1,"genders":["male"],"person_framing":["upper_body"],"person_expression":["smile"],"person_gaze":["camera"],
+   "image_style":"photo_dominant","photo_subject":["person","vehicle"],"elements":["icon","speech_bubble","underlay_band"],
+   "layout_pattern":"text_left_person_right","appeals":["no_experience","license_only","salary","flexible_shift","rewarding"],
+   "text_emphasis":["underlay_band"],"purpose":"direct_recruit","tone":["friendly","clean"]},
+ "colors": {"photo_bg":"#f4f6f8(明るい空・ぼかし)","headline":"#14398a(紺)","highlight":"#ffe680","bottom_band":"#0553aa","band_text":"#ffffff","band_accent":"#ffd23f","card":"#ffffff"},
+ "layers_bottom_to_top": ["背景写真(空+白い軽バン)", "人物(右、バンの前)", "見出し(左)", "吹き出し", "円カード3つ(左下)", "下部の青帯(最前面)"],
+ "elements": {
+   "top_pill": "x20-440 y35-70 薄黄のハイライト。『未経験OK! 普通免許で始められる!』紺・約22px",
+   "headline": "『軽貨物』x45-325 y85-170 約88px / 『ドライバー』x45-345 y175-255 約78px / 『募集!』x45-205 y255-320 約78px。紺・極太。『軽貨物』の下に黄ハイライト帯(y140-170)",
+   "bubble": "x230-350 y250-345 薄黄の円形吹き出し『一緒に働きませんか?』紺・17px",
+   "person": "笑顔の男性。腕組み・紺の帽子と紺ポロシャツ。x565-805 y25-512(高さの約81%)。カメラ目線",
+   "van": "白い軽バン正面。x360-900 y85-510。人物の背後",
+   "cards": "白円3つ 半径70。中心(88,430)(232,430)(376,430)。上にアイコン、中に紺太字タイトル22px『未経験OK』『安定収入』『シフト自由』、下に小さな説明11px",
+   "bottom_band": "y512-600 全幅 #0553aa。左にトラックアイコン、『地域密着のお仕事で、』白25px、『やりがいも◎』黄30px、右に白い角丸ボタン x565-885 y528-580『まずはお気軽にご応募ください!』青22px"
+ }
+}
