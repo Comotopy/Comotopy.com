@@ -33,7 +33,7 @@ def write_report(rows, path, backend):
     t = len(rows); ppl = [r["people_count"] for r in rows]
     g = Counter(x for r in rows for x in r["genders"])
     with_p = sum(1 for n in ppl if n)
-    avg = lambda k: sum(r[k] for r in rows) / t
+    avg = lambda k: (lambda v: sum(v) / len(v) if v else float('nan'))([r[k] for r in rows if r[k] is not None])
     md = f"""# 求人アイキャッチ 傾向レポート(MVP / backend={backend})
 対象: {t}枚 ※性別は見た目からの推定値
 

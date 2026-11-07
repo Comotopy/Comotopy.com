@@ -1,3 +1,4 @@
 samples/
 out/
 __pycache__/
+out_manual/

@@ -1,0 +1,352 @@
+{
+ "sample_000.png": {
+  "people_count": 1,
+  "genders": [
+   "male"
+  ],
+  "image_style": "illustration",
+  "appeals": [
+   "athome"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "sample_001.png": {
+  "people_count": 1,
+  "genders": [
+   "male"
+  ],
+  "image_style": "illustration",
+  "appeals": [
+   "athome"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "sample_002.png": {
+  "people_count": 0,
+  "genders": [],
+  "image_style": "text_only",
+  "appeals": [
+   "no_experience",
+   "salary"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "sample_003.png": {
+  "people_count": 1,
+  "genders": [
+   "female"
+  ],
+  "image_style": "illustration",
+  "appeals": [
+   "salary"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "sample_004.png": {
+  "people_count": 0,
+  "genders": [],
+  "image_style": "text_only",
+  "appeals": [
+   "bonus",
+   "salary"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "sample_005.png": {
+  "people_count": 0,
+  "genders": [],
+  "image_style": "text_only",
+  "appeals": [
+   "athome",
+   "short_hours"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "sample_006.png": {
+  "people_count": 0,
+  "genders": [],
+  "image_style": "text_only",
+  "appeals": [
+   "short_hours"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "sample_007.png": {
+  "people_count": 2,
+  "genders": [
+   "female",
+   "male"
+  ],
+  "image_style": "illustration",
+  "appeals": [
+   "no_experience",
+   "short_hours"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "sample_008.png": {
+  "people_count": 0,
+  "genders": [],
+  "image_style": "text_only",
+  "appeals": [
+   "no_experience"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "sample_009.png": {
+  "people_count": 0,
+  "genders": [],
+  "image_style": "text_only",
+  "appeals": [
+   "no_experience",
+   "salary"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "sample_010.png": {
+  "people_count": 1,
+  "genders": [
+   "female"
+  ],
+  "image_style": "illustration",
+  "appeals": [
+   "bonus"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "sample_011.png": {
+  "people_count": 1,
+  "genders": [
+   "female"
+  ],
+  "image_style": "illustration",
+  "appeals": [
+   "athome",
+   "bonus"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "sample_012.png": {
+  "people_count": 0,
+  "genders": [],
+  "image_style": "text_only",
+  "appeals": [
+   "no_experience"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "sample_013.png": {
+  "people_count": 2,
+  "genders": [
+   "female",
+   "female"
+  ],
+  "image_style": "illustration",
+  "appeals": [
+   "salary"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "sample_014.png": {
+  "people_count": 2,
+  "genders": [
+   "female",
+   "male"
+  ],
+  "image_style": "illustration",
+  "appeals": [
+   "short_hours"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "sample_015.png": {
+  "people_count": 0,
+  "genders": [],
+  "image_style": "text_only",
+  "appeals": [
+   "no_experience"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "sample_016.png": {
+  "people_count": 0,
+  "genders": [],
+  "image_style": "text_only",
+  "appeals": [
+   "short_hours"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "sample_017.png": {
+  "people_count": 0,
+  "genders": [],
+  "image_style": "text_only",
+  "appeals": [
+   "salary"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "sample_018.png": {
+  "people_count": 2,
+  "genders": [
+   "female",
+   "male"
+  ],
+  "image_style": "illustration",
+  "appeals": [
+   "athome",
+   "no_experience"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "sample_019.png": {
+  "people_count": 3,
+  "genders": [
+   "female",
+   "male",
+   "male"
+  ],
+  "image_style": "illustration",
+  "appeals": [
+   "salary"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "sample_020.png": {
+  "people_count": 0,
+  "genders": [],
+  "image_style": "text_only",
+  "appeals": [
+   "no_experience"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "sample_021.png": {
+  "people_count": 0,
+  "genders": [],
+  "image_style": "text_only",
+  "appeals": [
+   "short_hours"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "sample_022.png": {
+  "people_count": 0,
+  "genders": [],
+  "image_style": "text_only",
+  "appeals": [
+   "bonus",
+   "no_experience"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "sample_023.png": {
+  "people_count": 0,
+  "genders": [],
+  "image_style": "text_only",
+  "appeals": [
+   "bonus",
+   "short_hours"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "sample_024.png": {
+  "people_count": 2,
+  "genders": [
+   "female",
+   "male"
+  ],
+  "image_style": "illustration",
+  "appeals": [
+   "no_experience"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "sample_025.png": {
+  "people_count": 1,
+  "genders": [
+   "female"
+  ],
+  "image_style": "illustration",
+  "appeals": [
+   "salary"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "sample_026.png": {
+  "people_count": 1,
+  "genders": [
+   "male"
+  ],
+  "image_style": "illustration",
+  "appeals": [
+   "athome",
+   "bonus"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "sample_027.png": {
+  "people_count": 0,
+  "genders": [],
+  "image_style": "text_only",
+  "appeals": [
+   "bonus",
+   "short_hours"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "sample_028.png": {
+  "people_count": 1,
+  "genders": [
+   "male"
+  ],
+  "image_style": "illustration",
+  "appeals": [
+   "athome"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "sample_029.png": {
+  "people_count": 3,
+  "genders": [
+   "female",
+   "male",
+   "male"
+  ],
+  "image_style": "illustration",
+  "appeals": [
+   "no_experience"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ }
+}

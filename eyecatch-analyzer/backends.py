@@ -19,6 +19,13 @@ class MockBackend:
         return {k: r[k] for k in ("people_count", "genders", "image_style", "appeals")} | {
             "text_area_ratio": r["text_area_ratio_hint"], "main_text": ""}
 
+class ManualBackend:
+    """人手(またはClaude Codeセッション上のClaude)が付けたラベルJSONを読む。"""
+    def __init__(self, folder):
+        self.t = json.loads((Path(folder) / "manual_labels.json").read_text())
+    def analyze(self, path):
+        return self.t[Path(path).name]
+
 class ClaudeBackend:
     def __init__(self, model="claude-sonnet-5-5"):
         import anthropic
@@ -34,6 +41,7 @@ class ClaudeBackend:
 
 def get(name, folder):
     if name == "mock": return MockBackend(folder)
+    if name == "manual": return ManualBackend(folder)
     if name == "claude":
         if not os.environ.get("ANTHROPIC_API_KEY"): raise SystemExit("ANTHROPIC_API_KEY が未設定です")
         return ClaudeBackend()
