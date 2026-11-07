@@ -1,0 +1,10 @@
+{
+ "source": "job_004.jpg",
+ "analysis": {"width":960,"height":640,"people_count":0,"illustration_people_count":0,"image_style":"mixed",
+   "photo_subject":["vehicle"],"elements":["photo_frame","checklist","underlay_band","decoration_effect"],
+   "layout_pattern":"photo_left_text_right","text_emphasis":["number_highlight","checklist","underlay_band"],
+   "appeals":["salary","no_experience","vehicle_support","no_fee","other"],"text_area_ratio":0.45,
+   "colors":{"background":"#2a3cc4","accent":"#ffc928","check":"#ff7a1a","text":"#ffffff"}},
+ "concept": "濃い青の背景に白斜線の装飾帯を上辺に配置。上段は白文字の大見出し『平均月収 60 万円越え!』で『60』だけを黄色・特大にして数字を強調。左に白枠の実車写真(軽バン)、右に白い帯4本を縦積みし、各帯の左にオレンジのチェックボックスと黒文字の訴求(未経験の方歓迎/車両貸与制度あり/様々な案件多数/加盟金等一切なし)。",
+ "prompt": "Japanese recruitment banner, 960x640, royal blue background with white diagonal hatch bars along the top corners. Top: huge white bold headline '平均月収 60 万円越え!' where '60' is giant yellow (#ffc928) with dark outline. Left half: a white-bordered photo of a silver kei van parked on asphalt. Right half: four stacked white rounded bands, each with an orange checkbox icon and bold black Japanese text. Flat, high-contrast, impact style."
+}
