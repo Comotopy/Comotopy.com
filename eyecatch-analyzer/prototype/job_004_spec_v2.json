@@ -1,0 +1,13 @@
+{
+ "source": "job_004.jpg", "version": 2,
+ "canvas": {"w": 960, "h": 640},
+ "colors": {"background": "#1100aa(実測・最頻色)", "accent_yellow": "#ffd23f", "check_orange": "#ff7a1a", "band_bg": "#ffffff", "band_text": "#1a1a8a(紺)", "headline": "#ffffff", "number": "#ffd23f"},
+ "layers_bottom_to_top": ["背景", "斜線装飾(上左・上右・右中段・右下)", "写真枠(白枠8px)", "見出し(写真枠の上辺に重なる)", "訴求帯4本"],
+ "elements": {
+   "hatch_bars": "白斜線の帯。x=20-350 y=25-50 / x=585-930 y=25-50 / x=585-930 y=165-190 / x=585-930 y=590-615",
+   "headline": "y=60-170(高さの約17%)。『平均月収』『万円越え!』は約72px・白・太字+紺縁取り。『60』のみ約160px・黄・白縁取り。写真枠の上辺(y=112)に重なる",
+   "photo_frame": "x=40-470 y=112-610(幅45%・高さ78%)。白枠8px。中身は銀色の軽バン斜め前方、背景は住宅と路面",
+   "bands": "x=515-940 白帯4本。高さ65px・間隔91px(y=218,310,400,492開始)。左にオレンジ角丸チェックボックス46px。文字は約40px・紺・太字"
+ },
+ "prompt": "Japanese recruitment banner 960x640. Deep saturated blue (#1100aa) background with white diagonal hatch bars at four spots (top-left, top-right, right-middle, bottom-right). Headline in white bold ~72px with navy outline across the top, with the number '60' giant (~160px) in yellow (#ffd23f) with white outline; the headline overlaps the top edge of a white-bordered photo (left, 45% width, 78% height) of a silver kei van. On the right, four stacked white bands (65px tall, 91px pitch), each with an orange rounded checkbox and navy bold text."
+}

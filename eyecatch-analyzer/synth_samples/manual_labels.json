@@ -1,0 +1,707 @@
+{
+ "synth_000.png": {
+  "people_count": 0,
+  "genders": [],
+  "illustration_people_count": 1,
+  "image_style": "illustration_dominant",
+  "photo_subject": [],
+  "elements": [
+   "badge",
+   "illustration_person",
+   "illustration_vehicle",
+   "logo",
+   "underlay_band"
+  ],
+  "layout_pattern": "photo_left_text_right",
+  "text_emphasis": [
+   "underlay_band"
+  ],
+  "appeals": [
+   "no_experience",
+   "no_fee",
+   "vehicle_support"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "synth_001.png": {
+  "people_count": 0,
+  "genders": [],
+  "illustration_people_count": 2,
+  "image_style": "illustration_dominant",
+  "photo_subject": [],
+  "elements": [
+   "badge",
+   "decoration_effect",
+   "illustration_person",
+   "illustration_vehicle"
+  ],
+  "layout_pattern": "text_left_person_right",
+  "text_emphasis": [
+   "color_split_headline",
+   "number_highlight"
+  ],
+  "appeals": [
+   "direct_commute",
+   "no_experience",
+   "salary",
+   "side_job",
+   "vehicle_support"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "synth_002.png": {
+  "people_count": 0,
+  "genders": [],
+  "illustration_people_count": 2,
+  "image_style": "illustration_dominant",
+  "photo_subject": [],
+  "elements": [
+   "badge",
+   "illustration_person"
+  ],
+  "layout_pattern": "text_top_object_below",
+  "text_emphasis": [
+   "outline_stroke"
+  ],
+  "appeals": [
+   "direct_commute",
+   "license_only",
+   "no_experience"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "synth_003.png": {
+  "people_count": 0,
+  "genders": [],
+  "illustration_people_count": 1,
+  "image_style": "illustration_dominant",
+  "photo_subject": [],
+  "elements": [
+   "illustration_person",
+   "underlay_band"
+  ],
+  "layout_pattern": "text_top_object_below",
+  "text_emphasis": [
+   "outline_stroke",
+   "underlay_band"
+  ],
+  "appeals": [
+   "direct_commute",
+   "flexible_shift",
+   "no_fee"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "synth_004.png": {
+  "people_count": 0,
+  "genders": [],
+  "illustration_people_count": 1,
+  "image_style": "illustration_dominant",
+  "photo_subject": [],
+  "elements": [
+   "illustration_person",
+   "logo",
+   "underlay_band"
+  ],
+  "layout_pattern": "text_top_object_below",
+  "text_emphasis": [
+   "outline_stroke",
+   "underlay_band"
+  ],
+  "appeals": [
+   "direct_commute",
+   "salary"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "synth_005.png": {
+  "people_count": 0,
+  "genders": [],
+  "illustration_people_count": 2,
+  "image_style": "illustration_dominant",
+  "photo_subject": [],
+  "elements": [
+   "decoration_effect",
+   "illustration_person",
+   "illustration_vehicle"
+  ],
+  "layout_pattern": "text_top_object_below",
+  "text_emphasis": [
+   "outline_stroke"
+  ],
+  "appeals": [
+   "direct_commute",
+   "no_experience",
+   "no_fee"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "synth_006.png": {
+  "people_count": 0,
+  "genders": [],
+  "illustration_people_count": 1,
+  "image_style": "illustration_dominant",
+  "photo_subject": [],
+  "elements": [
+   "illustration_person",
+   "illustration_vehicle",
+   "underlay_band"
+  ],
+  "layout_pattern": "text_left_person_right",
+  "text_emphasis": [
+   "underlay_band"
+  ],
+  "appeals": [
+   "flexible_shift",
+   "vehicle_support"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "synth_007.png": {
+  "people_count": 0,
+  "genders": [],
+  "illustration_people_count": 1,
+  "image_style": "illustration_dominant",
+  "photo_subject": [],
+  "elements": [
+   "checklist",
+   "illustration_person",
+   "illustration_vehicle",
+   "speech_bubble"
+  ],
+  "layout_pattern": "text_left_person_right",
+  "text_emphasis": [
+   "checklist",
+   "outline_stroke"
+  ],
+  "appeals": [
+   "no_fee",
+   "side_job",
+   "vehicle_support"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "synth_008.png": {
+  "people_count": 0,
+  "genders": [],
+  "illustration_people_count": 1,
+  "image_style": "illustration_dominant",
+  "photo_subject": [],
+  "elements": [
+   "checklist",
+   "illustration_person",
+   "illustration_vehicle",
+   "logo"
+  ],
+  "layout_pattern": "photo_left_text_right",
+  "text_emphasis": [
+   "checklist",
+   "number_highlight"
+  ],
+  "appeals": [
+   "license_only",
+   "no_fee",
+   "salary"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "synth_009.png": {
+  "people_count": 0,
+  "genders": [],
+  "illustration_people_count": 2,
+  "image_style": "illustration_dominant",
+  "photo_subject": [],
+  "elements": [
+   "chart",
+   "illustration_person",
+   "speech_bubble"
+  ],
+  "layout_pattern": "photo_left_text_right",
+  "text_emphasis": [
+   "outline_stroke"
+  ],
+  "appeals": [
+   "license_only",
+   "no_experience",
+   "no_fee",
+   "side_job"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "synth_010.png": {
+  "people_count": 0,
+  "genders": [],
+  "illustration_people_count": 1,
+  "image_style": "illustration_dominant",
+  "photo_subject": [],
+  "elements": [
+   "badge",
+   "illustration_person",
+   "illustration_vehicle"
+  ],
+  "layout_pattern": "photo_left_text_right",
+  "text_emphasis": [],
+  "appeals": [
+   "flexible_shift",
+   "license_only",
+   "no_experience",
+   "no_fee",
+   "vehicle_support"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "synth_011.png": {
+  "people_count": 0,
+  "genders": [],
+  "illustration_people_count": 1,
+  "image_style": "illustration_dominant",
+  "photo_subject": [],
+  "elements": [
+   "chart",
+   "illustration_person",
+   "illustration_vehicle"
+  ],
+  "layout_pattern": "text_left_person_right",
+  "text_emphasis": [
+   "outline_stroke"
+  ],
+  "appeals": [
+   "direct_commute",
+   "flexible_shift",
+   "no_experience",
+   "vehicle_support"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "synth_012.png": {
+  "people_count": 0,
+  "genders": [],
+  "illustration_people_count": 1,
+  "image_style": "illustration_dominant",
+  "photo_subject": [],
+  "elements": [
+   "checklist",
+   "decoration_effect",
+   "illustration_person",
+   "speech_bubble"
+  ],
+  "layout_pattern": "photo_left_text_right",
+  "text_emphasis": [
+   "checklist"
+  ],
+  "appeals": [
+   "direct_commute",
+   "no_experience",
+   "salary",
+   "side_job",
+   "vehicle_support"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "synth_013.png": {
+  "people_count": 0,
+  "genders": [],
+  "illustration_people_count": 2,
+  "image_style": "illustration_dominant",
+  "photo_subject": [],
+  "elements": [
+   "badge",
+   "checklist",
+   "illustration_person",
+   "illustration_vehicle"
+  ],
+  "layout_pattern": "text_top_object_below",
+  "text_emphasis": [
+   "checklist"
+  ],
+  "appeals": [
+   "license_only",
+   "no_experience",
+   "salary",
+   "side_job"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "synth_014.png": {
+  "people_count": 0,
+  "genders": [],
+  "illustration_people_count": 2,
+  "image_style": "illustration_dominant",
+  "photo_subject": [],
+  "elements": [
+   "badge",
+   "chart",
+   "illustration_person",
+   "illustration_vehicle"
+  ],
+  "layout_pattern": "text_left_person_right",
+  "text_emphasis": [
+   "number_highlight"
+  ],
+  "appeals": [
+   "no_experience",
+   "salary",
+   "vehicle_support"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "synth_015.png": {
+  "people_count": 0,
+  "genders": [],
+  "illustration_people_count": 2,
+  "image_style": "illustration_dominant",
+  "photo_subject": [],
+  "elements": [
+   "illustration_person"
+  ],
+  "layout_pattern": "text_top_object_below",
+  "text_emphasis": [
+   "outline_stroke"
+  ],
+  "appeals": [
+   "no_experience",
+   "side_job",
+   "vehicle_support"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "synth_016.png": {
+  "people_count": 0,
+  "genders": [],
+  "illustration_people_count": 1,
+  "image_style": "illustration_dominant",
+  "photo_subject": [],
+  "elements": [
+   "icon",
+   "illustration_person",
+   "illustration_vehicle"
+  ],
+  "layout_pattern": "text_left_person_right",
+  "text_emphasis": [
+   "number_highlight"
+  ],
+  "appeals": [
+   "flexible_shift",
+   "salary",
+   "side_job"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "synth_017.png": {
+  "people_count": 0,
+  "genders": [],
+  "illustration_people_count": 0,
+  "image_style": "graphic_dominant",
+  "photo_subject": [],
+  "elements": [
+   "chart",
+   "decoration_effect",
+   "speech_bubble",
+   "underlay_band"
+  ],
+  "layout_pattern": "text_left_person_right",
+  "text_emphasis": [
+   "underlay_band"
+  ],
+  "appeals": [
+   "direct_commute",
+   "flexible_shift",
+   "salary",
+   "side_job",
+   "vehicle_support"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "synth_018.png": {
+  "people_count": 0,
+  "genders": [],
+  "illustration_people_count": 1,
+  "image_style": "illustration_dominant",
+  "photo_subject": [],
+  "elements": [
+   "decoration_effect",
+   "illustration_person",
+   "illustration_vehicle"
+  ],
+  "layout_pattern": "text_left_person_right",
+  "text_emphasis": [
+   "number_highlight"
+  ],
+  "appeals": [
+   "flexible_shift",
+   "salary"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "synth_019.png": {
+  "people_count": 0,
+  "genders": [],
+  "illustration_people_count": 1,
+  "image_style": "illustration_dominant",
+  "photo_subject": [],
+  "elements": [
+   "illustration_person"
+  ],
+  "layout_pattern": "photo_left_text_right",
+  "text_emphasis": [],
+  "appeals": [
+   "direct_commute",
+   "license_only",
+   "no_experience"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "synth_020.png": {
+  "people_count": 0,
+  "genders": [],
+  "illustration_people_count": 1,
+  "image_style": "illustration_dominant",
+  "photo_subject": [],
+  "elements": [
+   "illustration_person",
+   "illustration_vehicle",
+   "underlay_band"
+  ],
+  "layout_pattern": "text_top_object_below",
+  "text_emphasis": [
+   "outline_stroke",
+   "underlay_band"
+  ],
+  "appeals": [
+   "license_only",
+   "no_experience"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "synth_021.png": {
+  "people_count": 0,
+  "genders": [],
+  "illustration_people_count": 1,
+  "image_style": "illustration_dominant",
+  "photo_subject": [],
+  "elements": [
+   "illustration_person",
+   "illustration_vehicle",
+   "speech_bubble",
+   "underlay_band"
+  ],
+  "layout_pattern": "photo_left_text_right",
+  "text_emphasis": [
+   "underlay_band"
+  ],
+  "appeals": [
+   "license_only",
+   "side_job",
+   "vehicle_support"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "synth_022.png": {
+  "people_count": 0,
+  "genders": [],
+  "illustration_people_count": 1,
+  "image_style": "illustration_dominant",
+  "photo_subject": [],
+  "elements": [
+   "icon",
+   "illustration_person",
+   "underlay_band"
+  ],
+  "layout_pattern": "photo_left_text_right",
+  "text_emphasis": [
+   "underlay_band"
+  ],
+  "appeals": [
+   "flexible_shift",
+   "no_experience"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "synth_023.png": {
+  "people_count": 0,
+  "genders": [],
+  "illustration_people_count": 2,
+  "image_style": "illustration_dominant",
+  "photo_subject": [],
+  "elements": [
+   "illustration_person"
+  ],
+  "layout_pattern": "text_top_object_below",
+  "text_emphasis": [
+   "number_highlight",
+   "outline_stroke"
+  ],
+  "appeals": [
+   "salary",
+   "side_job",
+   "vehicle_support"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "synth_024.png": {
+  "people_count": 0,
+  "genders": [],
+  "illustration_people_count": 2,
+  "image_style": "illustration_dominant",
+  "photo_subject": [],
+  "elements": [
+   "icon",
+   "illustration_person",
+   "illustration_vehicle"
+  ],
+  "layout_pattern": "text_top_object_below",
+  "text_emphasis": [
+   "outline_stroke"
+  ],
+  "appeals": [
+   "flexible_shift",
+   "no_experience"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "synth_025.png": {
+  "people_count": 0,
+  "genders": [],
+  "illustration_people_count": 2,
+  "image_style": "illustration_dominant",
+  "photo_subject": [],
+  "elements": [
+   "badge",
+   "decoration_effect",
+   "illustration_person"
+  ],
+  "layout_pattern": "text_left_person_right",
+  "text_emphasis": [
+   "number_highlight"
+  ],
+  "appeals": [
+   "license_only",
+   "no_experience",
+   "no_fee",
+   "salary",
+   "vehicle_support"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "synth_026.png": {
+  "people_count": 0,
+  "genders": [],
+  "illustration_people_count": 0,
+  "image_style": "graphic_dominant",
+  "photo_subject": [],
+  "elements": [
+   "chart",
+   "underlay_band"
+  ],
+  "layout_pattern": "text_left_person_right",
+  "text_emphasis": [
+   "underlay_band"
+  ],
+  "appeals": [
+   "license_only",
+   "no_fee",
+   "vehicle_support"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "synth_027.png": {
+  "people_count": 0,
+  "genders": [],
+  "illustration_people_count": 0,
+  "image_style": "illustration_dominant",
+  "photo_subject": [],
+  "elements": [
+   "illustration_vehicle",
+   "speech_bubble"
+  ],
+  "layout_pattern": "photo_left_text_right",
+  "text_emphasis": [
+   "outline_stroke"
+  ],
+  "appeals": [
+   "direct_commute",
+   "salary",
+   "side_job",
+   "vehicle_support"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "synth_028.png": {
+  "people_count": 0,
+  "genders": [],
+  "illustration_people_count": 1,
+  "image_style": "illustration_dominant",
+  "photo_subject": [],
+  "elements": [
+   "checklist",
+   "illustration_person",
+   "illustration_vehicle"
+  ],
+  "layout_pattern": "text_left_person_right",
+  "text_emphasis": [
+   "checklist",
+   "number_highlight"
+  ],
+  "appeals": [
+   "direct_commute",
+   "flexible_shift",
+   "salary"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ },
+ "synth_029.png": {
+  "people_count": 0,
+  "genders": [],
+  "illustration_people_count": 1,
+  "image_style": "illustration_dominant",
+  "photo_subject": [],
+  "elements": [
+   "badge",
+   "checklist",
+   "icon",
+   "illustration_person"
+  ],
+  "layout_pattern": "text_left_person_right",
+  "text_emphasis": [
+   "checklist"
+  ],
+  "appeals": [
+   "direct_commute",
+   "flexible_shift",
+   "license_only",
+   "no_experience",
+   "no_fee"
+  ],
+  "text_area_ratio": null,
+  "main_text": ""
+ }
+}

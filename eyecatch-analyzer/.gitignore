@@ -1,0 +1,8 @@
+samples/
+out/
+__pycache__/
+out_manual/
+real_samples/
+out_real/
+job_samples/
+out_job/
