@@ -10,7 +10,7 @@ def main():
     a = ap.parse_args()
     be = backends.get(a.backend, a.folder)
     rows = []
-    for p in sorted(Path(a.folder).glob("*.[pj][np]g")):
+    for p in sorted(q for q in Path(a.folder).iterdir() if q.suffix.lower() in {".png", ".jpg", ".jpeg", ".webp"}):
         try: sem = be.analyze(p)
         except Exception as e: print("skip", p.name, e); continue
         rows.append({"file": p.name, **features.color_features(p), **sem})
